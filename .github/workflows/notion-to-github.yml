@@ -1,0 +1,40 @@
+name: Notion to GitHub Commit
+
+on:
+  schedule:
+    # 하루에 3번 실행: 오전 8시, 오후 4시, 자정 (UTC 기준)
+    - cron: '0 0,8,16 * * *'
+
+jobs:
+  update-github:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install requests
+
+    - name: Run Notion to GitHub script
+      env:
+        NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        python script.py
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Update from Notion [skip ci]" || echo "No changes to commit"
+        git push origin main
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
