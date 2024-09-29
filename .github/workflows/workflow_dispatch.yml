@@ -29,6 +29,10 @@ jobs:
       run: |
         python script.py
 
+    - name: Pull changes from GitHub
+      run: |
+        git pull origin main --rebase
+
     - name: Commit and push changes
       run: |
         git config --global user.name "github-actions[bot]"
