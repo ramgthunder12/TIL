@@ -3,5 +3,5 @@
     "status": 400,
     "code": "validation_error",
     "message": "path failed validation: path.database_id should be a valid uuid, instead was `\"your_notion_database_id\"`.",
-    "request_id": "043d2135-5746-4e34-a6a7-3f892fac97cd"
+    "request_id": "52ba1baa-f8c0-492a-aeaf-27b2e393f8c0"
 }
