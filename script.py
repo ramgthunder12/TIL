@@ -5,7 +5,7 @@ from datetime import datetime
 
 # 환경 변수에서 Notion API 키와 데이터베이스 ID 가져오기
 notion_api_key = os.getenv('NOTION_API_KEY')
-database_id = 'your_notion_database_id'  # 자신의 Notion 데이터베이스 ID로 교체
+database_id = '7de93cbc1636434086efaec8ba184ff4'  # 자신의 Notion 데이터베이스 ID로 교체
 
 # Notion API 설정
 headers = {
