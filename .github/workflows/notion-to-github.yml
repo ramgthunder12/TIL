@@ -3,8 +3,7 @@ name: Notion to GitHub Commit
 on:
   schedule:
     # 하루에 3번 실행: 오전 8시, 오후 4시, 자정 (UTC 기준)
-    #- cron: '0 0,8,16 * * *'
-    - cron: '* * * * *'
+    - cron: '0 0,8,16 * * *'
 
 jobs:
   update-github:
