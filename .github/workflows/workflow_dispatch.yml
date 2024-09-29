@@ -29,9 +29,17 @@ jobs:
       run: |
         python script.py
 
+    - name: Stash changes
+      run: |
+        git stash
+
     - name: Pull changes from GitHub
       run: |
         git pull origin main --rebase
+
+    - name: Apply stashed changes
+      run: |
+        git stash pop || echo "No stashed changes to apply"
 
     - name: Commit and push changes
       run: |
