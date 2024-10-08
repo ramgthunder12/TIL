@@ -26,6 +26,9 @@ jobs:
       env:
         NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+        RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
       run: |
         python script.py
 
