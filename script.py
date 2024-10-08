@@ -12,9 +12,9 @@ notion_api_key = os.getenv('NOTION_API_KEY')
 database_id = '7de93cbc1636434086efaec8ba184ff4'  # 자신의 Notion 데이터베이스 ID로 교체
 
 # 이메일 설정
-SENDER_EMAIL = os.getenv('SENDER_EMAIL')
-RECEIVER_EMAIL = os.getenv('RECEIVER_EMAIL')
-EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
+SENDER_EMAIL = os.getenv('s333o333s@naver.com')
+RECEIVER_EMAIL = os.getenv('ramgthunder12@gmail.com')
+EMAIL_PASSWORD = os.getenv('Voalffl486^^')
 
 # Notion API 설정
 headers = {
@@ -37,7 +37,10 @@ def send_email_notification(message):
     msg['To'] = RECEIVER_EMAIL
     msg['Subject'] = 'Git Merge Conflict Alert'
     msg.attach(MIMEText(message, 'plain'))
-    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
+    
+    # 네이버 메일 SMTP 서버 정보
+    with smtplib.SMTP('smtp.naver.com', 587) as server:
+        server.starttls()  # TLS 암호화 시작
         server.login(SENDER_EMAIL, EMAIL_PASSWORD)
         server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, msg.as_string())
 
