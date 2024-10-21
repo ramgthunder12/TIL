@@ -28,6 +28,11 @@ def get_notion_data():
     url = f"https://api.notion.com/v1/databases/{database_id}/query"
     response = requests.post(url, headers=headers)
     data = response.json()
+    
+    # JSON 데이터를 보기 좋게 출력
+    print("Notion data retrieved:")
+    print(json.dumps(data, indent=4))  # 데이터를 들여쓰기로 출력
+    
     return data
 
 # 이메일 알림 보내기
@@ -55,7 +60,7 @@ def remove_merge_conflicts(data_str):
         if start != -1 and mid != -1 and end != -1:
             # 상위 버전 부분은 버리고, 중간 이후 버전만 남김
             data_str = data_str[:start] + data_str[mid + len("======="):end] + data_str[end + len(">>>>>>>"):]
-
+    
     return data_str
 
 # 데이터 저장 및 포맷팅
@@ -116,7 +121,7 @@ def save_data_to_file(data):
     return False  # 변경 사항 없음
 
 if __name__ == "__main__":
-    notion_data = get_notion_data()
+    notion_data = get_notion_data()  # 데이터 가져오기 및 출력
     changed = save_data_to_file(notion_data)
     if changed:
         print("Data updated, committing changes.")
