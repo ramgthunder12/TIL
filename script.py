@@ -12,7 +12,7 @@ notion_api_key = os.getenv('NOTION_API_KEY')
 database_id = '7de93cbc1636434086efaec8ba184ff4'  # 자신의 Notion 데이터베이스 ID로 교체
 
 # 이메일 설정
-SENDER_EMAIL = os.getenv('s333o333s@naver.com')
+SENDER_EMAIL = os.getenv('ramgthunder')
 RECEIVER_EMAIL = os.getenv('ramgthunder12@gmail.com')
 EMAIL_PASSWORD = os.getenv('Voalffl486^^')
 
