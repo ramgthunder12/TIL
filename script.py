@@ -1,4 +1,4 @@
-import os
+import os 
 import requests
 import json
 import shutil
@@ -44,6 +44,20 @@ def send_email_notification(message):
         server.login(SENDER_EMAIL, EMAIL_PASSWORD)
         server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, msg.as_string())
 
+# 충돌 마커가 포함된 데이터를 정리하는 함수
+def remove_merge_conflicts(data_str):
+    """ Git 머지 충돌 마커가 포함된 데이터를 정리 """
+    while "<<<<<<<" in data_str and "=======" in data_str and ">>>>>>>" in data_str:
+        start = data_str.find("<<<<<<<")
+        mid = data_str.find("=======", start)
+        end = data_str.find(">>>>>>>", mid)
+
+        if start != -1 and mid != -1 and end != -1:
+            # 상위 버전 부분은 버리고, 중간 이후 버전만 남김
+            data_str = data_str[:start] + data_str[mid + len("======="):end] + data_str[end + len(">>>>>>>"):]
+
+    return data_str
+
 # 데이터 저장 및 포맷팅
 def save_data_to_file(data):
     # 데이터 파일명
@@ -61,10 +75,34 @@ def save_data_to_file(data):
         # 기존 파일과 새로운 데이터를 비교
         with open(filename, "r") as file:
             try:
-                existing_data = json.load(file)
-            except json.JSONDecodeError:
-                # 충돌 발생 시
-                send_email_notification("Merge conflict detected. Old data backed up.")
+                existing_data = file.read()
+                
+                # 충돌 마커가 있는지 확인
+                if "<<<<<<<" in existing_data:
+                    print("Merge conflict detected, removing conflict markers.")
+                    cleaned_data = remove_merge_conflicts(existing_data)
+                    
+                    # 충돌 마커를 제거한 데이터를 다시 로드
+                    try:
+                        existing_data = json.loads(cleaned_data)
+                    except json.JSONDecodeError:
+                        # 오류 발생 시 이메일 알림 및 로그 기록
+                        send_email_notification("JSON decoding failed after conflict marker removal.")
+                        existing_data = {}
+                else:
+                    # JSON 로드 시도
+                    existing_data = json.loads(existing_data)
+            except json.JSONDecodeError as e:
+                # 충돌 발생 시 이메일 알림 및 로그 기록
+                error_message = f"JSONDecodeError: {str(e)}\nMerge conflict detected. Old data backed up."
+                print(error_message)  # 콘솔에 오류 출력
+                send_email_notification(error_message)
+                existing_data = {}
+            except Exception as e:
+                # 예상치 못한 예외 처리
+                error_message = f"Unexpected error: {str(e)}"
+                print(error_message)
+                send_email_notification(error_message)
                 existing_data = {}
 
     else:
