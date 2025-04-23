@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "1b122086-c5a0-8045-b568-c76d7bc86dd7",
-            "created_time": "2025-03-09T15:46:00.000Z",
-            "last_edited_time": "2025-03-09T16:17:00.000Z",
+            "id": "13922086-c5a0-8083-8790-ed5638d0bb9e",
+            "created_time": "2024-11-09T00:57:00.000Z",
+            "last_edited_time": "2024-11-09T00:57:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -29,140 +29,13 @@
                 "\ubb38\uc81c\uc810": {
                     "id": "Cw%5BV",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "9b5efb4f-128f-4507-9f25-f16b3ce210c7",
-                            "name": "axiosNetworkError",
-                            "color": "yellow"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "\ub0a0\uc9dc": {
                     "id": "hl%7Ca",
                     "type": "date",
                     "date": {
-                        "start": "2025-03-10T00:46:00.000+09:00",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
-                "\ud574\uacb0\ub960": {
-                    "id": "kaDc",
-                    "type": "number",
-                    "number": 100
-                },
-                "\ud574\uacb0\ubc29\ubc95": {
-                    "id": "mK%5BV",
-                    "type": "rich_text",
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "localhost\uc5d0\uc11c IP\uc8fc\uc18c\ub85c \ubcc0\ud658\ud574\uc11c \uc791\uc131",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "localhost\uc5d0\uc11c IP\uc8fc\uc18c\ub85c \ubcc0\ud658\ud574\uc11c \uc791\uc131",
-                            "href": null
-                        }
-                    ]
-                },
-                "\ubb38\uc81c\uc810 \uce74\ud14c\uace0\ub9ac": {
-                    "id": "zPZ%3A",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "@XVY",
-                            "name": "Network",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "2ca494e0-57bd-44c9-80d3-464f8d5b4270",
-                            "name": "react",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "d2774619-761c-4b8f-8459-d2df61e0c298",
-                            "name": "expo",
-                            "color": "red"
-                        }
-                    ]
-                },
-                "\ud504\ub85c\uc81d\ud2b8\uba85": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "\uac1c\ubc1c \uae30\ub85d",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "\uac1c\ubc1c \uae30\ub85d",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/1b122086c5a08045b568c76d7bc86dd7",
-            "public_url": "https://astonishing-archer-8d6.notion.site/1b122086c5a08045b568c76d7bc86dd7"
-        },
-        {
-            "object": "page",
-            "id": "1af22086-c5a0-804d-b526-cfcd00ddb995",
-            "created_time": "2025-03-07T03:02:00.000Z",
-            "last_edited_time": "2025-03-20T15:50:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
-            },
-            "cover": null,
-            "icon": {
-                "type": "emoji",
-                "emoji": "\ud83d\udd27"
-            },
-            "parent": {
-                "type": "database_id",
-                "database_id": "7de93cbc-1636-4340-86ef-aec8ba184ff4"
-            },
-            "archived": false,
-            "in_trash": false,
-            "properties": {
-                "\ubb38\uc81c\uc810": {
-                    "id": "Cw%5BV",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "4f04e5b9-46c2-4a11-b31f-18196140b7cd",
-                            "name": "\uc18d\ub3c4",
-                            "color": "green"
-                        }
-                    ]
-                },
-                "\ub0a0\uc9dc": {
-                    "id": "hl%7Ca",
-                    "type": "date",
-                    "date": {
-                        "start": "2025-03-07T12:02:00.000+09:00",
+                        "start": "2024-11-09T09:57:00.000+09:00",
                         "end": null,
                         "time_zone": null
                     }
@@ -180,144 +53,7 @@
                 "\ubb38\uc81c\uc810 \uce74\ud14c\uace0\ub9ac": {
                     "id": "zPZ%3A",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "hpo<",
-                            "name": "Spring Boot",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "2ca494e0-57bd-44c9-80d3-464f8d5b4270",
-                            "name": "react",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "d2774619-761c-4b8f-8459-d2df61e0c298",
-                            "name": "expo",
-                            "color": "red"
-                        },
-                        {
-                            "id": "@XVY",
-                            "name": "Network",
-                            "color": "pink"
-                        }
-                    ]
-                },
-                "\ud504\ub85c\uc81d\ud2b8\uba85": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "\uac1c\ubc1c \uae30\ub85d",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "\uac1c\ubc1c \uae30\ub85d",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/1af22086c5a0804db526cfcd00ddb995",
-            "public_url": "https://astonishing-archer-8d6.notion.site/1af22086c5a0804db526cfcd00ddb995"
-        },
-        {
-            "object": "page",
-            "id": "13922086-c5a0-8083-8790-ed5638d0bb9e",
-            "created_time": "2024-11-09T00:57:00.000Z",
-            "last_edited_time": "2025-03-07T03:06:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
-            },
-            "cover": null,
-            "icon": {
-                "type": "emoji",
-                "emoji": "\ud83d\udd27"
-            },
-            "parent": {
-                "type": "database_id",
-                "database_id": "7de93cbc-1636-4340-86ef-aec8ba184ff4"
-            },
-            "archived": false,
-            "in_trash": false,
-            "properties": {
-                "\ubb38\uc81c\uc810": {
-                    "id": "Cw%5BV",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "d0d3aea1-9f19-4306-892c-903f9ed901a2",
-                            "name": "\ud504\ub85c\uc81d\ud2b8 \uc2e4\ud589",
-                            "color": "pink"
-                        }
-                    ]
-                },
-                "\ub0a0\uc9dc": {
-                    "id": "hl%7Ca",
-                    "type": "date",
-                    "date": {
-                        "start": "2025-03-07T11:50:00.000+09:00",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
-                "\ud574\uacb0\ub960": {
-                    "id": "kaDc",
-                    "type": "number",
-                    "number": 100
-                },
-                "\ud574\uacb0\ubc29\ubc95": {
-                    "id": "mK%5BV",
-                    "type": "rich_text",
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "expoGo\uc5d0 \ub9de\ucdb0\uc11c \ubc84\uc804 \uc5c5\uadf8\ub808\uc774\ub4dc, \uc0ac\uc6a9\ud558\uc9c0 \ubabb\ud558\ub294 expo-barcode-scanner \uc81c\uac70",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "expoGo\uc5d0 \ub9de\ucdb0\uc11c \ubc84\uc804 \uc5c5\uadf8\ub808\uc774\ub4dc, \uc0ac\uc6a9\ud558\uc9c0 \ubabb\ud558\ub294 expo-barcode-scanner \uc81c\uac70",
-                            "href": null
-                        }
-                    ]
-                },
-                "\ubb38\uc81c\uc810 \uce74\ud14c\uace0\ub9ac": {
-                    "id": "zPZ%3A",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "2ca494e0-57bd-44c9-80d3-464f8d5b4270",
-                            "name": "react",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "d2774619-761c-4b8f-8459-d2df61e0c298",
-                            "name": "expo",
-                            "color": "red"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "\ud504\ub85c\uc81d\ud2b8\uba85": {
                     "id": "title",
@@ -1450,5 +1186,5 @@
     "has_more": false,
     "type": "page_or_database",
     "page_or_database": {},
-    "request_id": "328d7aa2-747f-4c04-a259-506997d24c66"
+    "request_id": "8e518241-3d2c-4211-b1ea-567bc62de4c9"
 }
