@@ -3,5 +3,5 @@
     "status": 400,
     "code": "validation_error",
     "message": "path failed validation: path.database_id should be a valid uuid, instead was `\"DATABASE_ID\"`.",
-    "request_id": "05511dd7-b930-434d-bd40-d83f31b4c520"
+    "request_id": "dc812e63-bbee-4689-b5a5-1d4e3f8dd05f"
 }
