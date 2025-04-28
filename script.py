@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 
 # 환경 변수에서 Notion API 키와 데이터베이스 ID 가져오기
 notion_api_key = os.getenv('NOTION_API_KEY')
-database_id = os.getenv('DATABASE_ID')
+database_id = '7de93cbc1636434086efaec8ba184ff4'
 
 # 이메일 설정
 SENDER_EMAIL = os.getenv('SENDER_EMAIL')
