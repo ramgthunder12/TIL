@@ -1,0 +1,7 @@
+{
+    "object": "error",
+    "status": 400,
+    "code": "validation_error",
+    "message": "path failed validation: path.database_id should be a valid uuid, instead was `\"None\"`.",
+    "request_id": "20968837-b11a-433e-8b42-a87ac3f7d8f2"
+}
