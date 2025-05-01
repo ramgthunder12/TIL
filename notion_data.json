@@ -1,7 +1,7 @@
 {
     "object": "error",
-    "status": 404,
-    "code": "object_not_found",
-    "message": "Could not find database with ID: 11f22086-c5a0-80a2-9930-cb86a14d3fd5. Make sure the relevant pages and databases are shared with your integration.",
-    "request_id": "672bc4e4-cfb7-47e2-b753-a6e82a85959a"
+    "status": 400,
+    "code": "validation_error",
+    "message": "path failed validation: path.database_id should be a valid uuid, instead was `\"None\"`.",
+    "request_id": "20968837-b11a-433e-8b42-a87ac3f7d8f2"
 }
