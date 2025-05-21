@@ -34,6 +34,9 @@ def get_notion_data():
     print(json.dumps(data, indent=4))  # 데이터를 들여쓰기로 출력
     
     return data
+# Notion 데이터베이스 에러 응답 검사
+def is_notion_error(data: dict) -> bool:
+    return data.get("object") == "error"
 
 # 이메일 알림 보내기
 def send_email_notification(message):
@@ -122,8 +125,14 @@ def save_data_to_file(data):
 
 if __name__ == "__main__":
     notion_data = get_notion_data()  # 데이터 가져오기 및 출력
-    changed = save_data_to_file(notion_data)
-    if changed:
-        print("Data updated, committing changes.")
+    
+    if is_notion_error(notion_data):
+        error_message = f"❌ Notion API returned error:\n{json.dumps(notion_data, indent=4)}"
+        print(error_message)
+        send_email_notification(error_message)
     else:
-        print("No changes detected, skipping commit.")
+        changed = save_data_to_file(notion_data)
+        if changed:
+            print("Data updated, committing changes.")
+        else:
+            print("No changes detected, skipping commit.")
