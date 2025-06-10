@@ -1,6 +1,6 @@
 개발자 기술 면접 노트에서 나온 코딩테스트 준비 전략 파트 연습
 페이지 110 ~
-1. 주어진 문자열ㅇ르 반전 시키는 프로그램을 작성하시오.
+1. 주어진 문자열을 반전 시키는 프로그램을 작성하시오.
   [ReverseString3](./ReverseString3.java)
   [ReverseString2](./ReverseString2.java)
   [ReverseString1](./ReverseString.java)
