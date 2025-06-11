@@ -23,20 +23,27 @@ headers = {
     "Notion-Version": "2022-06-28"
 }
 
-# Notion 데이터베이스 가져오기
+# Notion 데이터베이스 가져오기 첫번째 블록
+# 블록 가져오기, 블록 아이디, 시작커서, 페이지크기, 헤더
+# url = 'https://api.notion.com/v1/blocks/{block_id}/children?page_size=100'
+# page_size 는 어떻게 구하지?
 def get_notion_data():
     url = f"https://api.notion.com/v1/databases/{database_id}/query"
     response = requests.post(url, headers=headers)
     data = response.json()
     
-    # JSON 데이터를 보기 좋게 출력
-    print("Notion data retrieved:")
-    print(json.dumps(data, indent=4))  # 데이터를 들여쓰기로 출력
+    return data
+
+def get_block_children(children_id):
+    url = f"https://api.notion.com/v1/blocks/{children_id}/children?page_size=100"
+    response = requests.get(url, headers=headers)
+    data = response.json()
     
     return data
 # Notion 데이터베이스 에러 응답 검사
 def is_notion_error(data: dict) -> bool:
     return data.get("object") == "error"
+
 
 # 이메일 알림 보내기
 def send_email_notification(message):
@@ -123,16 +130,92 @@ def save_data_to_file(data):
         return True  # 변경 사항 있음
     return False  # 변경 사항 없음
 
-if __name__ == "__main__":
-    notion_data = get_notion_data()  # 데이터 가져오기 및 출력
+
+# 데이터 저장 및 포맷팅
+def save_block_to_file(block_data, block_id):
+    # 데이터 파일명
+    # block_data에서 이름 찾기
+    os.makedirs("TILDB", exist_ok=True)
+    count = 1
+    title = block_data.get("properties", {}).get("Name", {}).get("title", [{}])[0].get("plain_text", "")
+    filename = f"TILDB/{title}.json"
+
+    conflict_folder = "충돌전"
+    os.makedirs(conflict_folder, exist_ok=True)
     
-    if is_notion_error(notion_data):
-        error_message = f"❌ Notion API returned error:\n{json.dumps(notion_data, indent=4)}"
-        print(error_message)
-        send_email_notification(error_message)
+    # 파일 존재 여부 체크
+    if os.path.exists(filename):
+        # 기존 데이터를 백업
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+        os.makedirs(os.path.join(conflict_folder, "TILDB/conflict"), exist_ok=True)
+
+        backup_filename = os.path.join(conflict_folder, f"TILDB/conflict/{title}_{timestamp}.json")
+        shutil.copyfile(filename, backup_filename)
+        
+        # 기존 파일과 새로운 데이터를 비교
+        with open(filename, "r") as file:
+            try:
+                existing_data = file.read()
+                
+                # 충돌 마커가 있는지 확인
+                if "<<<<<<<" in existing_data:
+                    print("Merge conflict detected, removing conflict markers.")
+                    cleaned_data = remove_merge_conflicts(existing_data)
+                    
+                    # 충돌 마커를 제거한 데이터를 다시 로드
+                    try:
+                        existing_data = json.loads(cleaned_data)
+                    except json.JSONDecodeError:
+                        # 오류 발생 시 이메일 알림 및 로그 기록
+                        send_email_notification("JSON decoding failed after conflict marker removal.")
+                        existing_data = {}
+                else:
+                    # JSON 로드 시도
+                    existing_data = json.loads(existing_data)
+            except json.JSONDecodeError as e:
+                # 충돌 발생 시 이메일 알림 및 로그 기록
+                error_message = f"JSONDecodeError: {str(e)}\nMerge conflict detected. Old data backed up."
+                print(error_message)  # 콘솔에 오류 출력
+                send_email_notification(error_message)
+                existing_data = {}
+            except Exception as e:
+                # 예상치 못한 예외 처리
+                error_message = f"Unexpected error: {str(e)}"
+                print(error_message)
+                send_email_notification(error_message)
+                existing_data = {}
+
     else:
-        changed = save_data_to_file(notion_data)
-        if changed:
-            print("Data updated, committing changes.")
+        existing_data = {}
+    
+    # 기존 데이터와 비교하여 변경 사항 확인
+    if existing_data != block_data:
+        with open(filename, "w") as file:
+            json.dump(block_data, file, indent=4)
+        return True  # 변경 사항 있음
+    return False  # 변경 사항 없음
+
+if __name__ == "__main__":
+    notion_data = get_notion_data()  # 데이터 가져오기
+    changed = save_data_to_file(notion_data)
+    if changed:
+        print("Data updated, committing changes.")
+    else:
+        print("No changes detected, skipping commit.")
+    
+    # 모든 자식 블록 가져오기
+    for block_children in notion_data.get("results", []):
+        children_id = block_children.get("id", "")
+        # 값 있는지 확인
+        if children_id:
+            # 자식 블럭 요청하기
+            # 있으면 파일만들기, 없으면 종료
+            children_data = get_block_children(children_id)
+            if children_data:
+            # 자식 블록 파일로 만들기
+                save_block_to_file(children_data, children_id)
+            else:
+                print("None children file.")
         else:
-            print("No changes detected, skipping commit.")
+            print("No childere ID found.")
