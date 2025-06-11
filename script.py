@@ -73,6 +73,13 @@ def remove_merge_conflicts(data_str):
     
     return data_str
 
+def extract_title_from_page(page):
+    title_property = page.get("properties", {}).get("Name", {})
+    title_array = title_property.get("title", [])
+    if title_array and isinstance(title_array[0], dict):
+        return title_array[0].get("plain_text", "")
+    return ""
+
 # 데이터 저장 및 포맷팅
 def save_data_to_file(data):
     # 데이터 파일명
@@ -132,13 +139,11 @@ def save_data_to_file(data):
 
 
 # 데이터 저장 및 포맷팅
-def save_block_to_file(block_data, block_id):
+def save_block_to_file(blocks, page_title, page_id):
     # 데이터 파일명
     # block_data에서 이름 찾기
-    os.makedirs("TILDB", exist_ok=True)
-    count = 1
-    title = block_data.get("properties", {}).get("Name", {}).get("title", [{}])[0].get("plain_text", "")
-    filename = f"TILDB/{title}.json"
+    os.makedirs("NotionTIL", exist_ok=True)
+    filename = f"NotionTIL/{page_title or page_id}.json"
 
     conflict_folder = "충돌전"
     os.makedirs(conflict_folder, exist_ok=True)
@@ -148,9 +153,10 @@ def save_block_to_file(block_data, block_id):
         # 기존 데이터를 백업
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-        os.makedirs(os.path.join(conflict_folder, "TILDB/conflict"), exist_ok=True)
+        conflict_path = os.path.join(conflict_folder, "NotionTIL_conflict")
+        os.makedirs(conflict_path, exist_ok=True)
+        backup_filename = os.path.join(conflict_path, f"{page_title}_{timestamp}_{page_id[:6]}.json")
 
-        backup_filename = os.path.join(conflict_folder, f"TILDB/conflict/{title}_{timestamp}.json")
         shutil.copyfile(filename, backup_filename)
         
         # 기존 파일과 새로운 데이터를 비교
@@ -190,9 +196,9 @@ def save_block_to_file(block_data, block_id):
         existing_data = {}
     
     # 기존 데이터와 비교하여 변경 사항 확인
-    if existing_data != block_data:
+    if existing_data != blocks:
         with open(filename, "w") as file:
-            json.dump(block_data, file, indent=4)
+            json.dump(blocks, file, indent=4)
         return True  # 변경 사항 있음
     return False  # 변경 사항 없음
 
@@ -205,16 +211,17 @@ if __name__ == "__main__":
         print("No changes detected, skipping commit.")
     
     # 모든 자식 블록 가져오기
-    for block_children in notion_data.get("results", []):
-        children_id = block_children.get("id", "")
+    for page in notion_data.get("results", []):
+        page_id = page.get("id", "")
+        title = extract_title_from_page(page)
         # 값 있는지 확인
-        if children_id:
+        if page_id:
             # 자식 블럭 요청하기
             # 있으면 파일만들기, 없으면 종료
-            children_data = get_block_children(children_id)
-            if children_data:
+            blocks = get_block_children(page_id).get("results", [])
+            if blocks:
             # 자식 블록 파일로 만들기
-                save_block_to_file(children_data, children_id)
+                save_block_to_file(blocks, title, page_id)
             else:
                 print("None children file.")
         else:
