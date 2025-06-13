@@ -74,7 +74,7 @@
             "object": "page",
             "id": "21122086-c5a0-80a3-b93f-fec289e5c4d1",
             "created_time": "2025-06-13T05:47:00.000Z",
-            "last_edited_time": "2025-06-13T12:59:00.000Z",
+            "last_edited_time": "2025-06-13T06:11:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -104,13 +104,7 @@
                 "\uce74\ud14c\uace0\ub9ac": {
                     "id": "ggg%5E",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
-                            "name": "Java",
-                            "color": "green"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "\uc774\ub984": {
                     "id": "title",
@@ -1321,5 +1315,5 @@
     "has_more": false,
     "type": "page_or_database",
     "page_or_database": {},
-    "request_id": "476e8142-45f7-4edc-88f6-f247e6507bee"
+    "request_id": "018d0ad5-051d-497e-b734-d621496ecdff"
 }
