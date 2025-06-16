@@ -1,13 +1,13 @@
 [
     {
         "object": "block",
-        "id": "1f422086-c5a0-807e-bd40-e054da7349a6",
+        "id": "12922086-c5a0-81bf-a786-c38d168564d9",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-29T14:23:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -46,13 +46,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-8012-a5be-f9c7704b3986",
+        "id": "12922086-c5a0-81ec-809b-f28e2face591",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -90,13 +90,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-8037-8f26-d8e6bcb54b35",
+        "id": "12e22086-c5a0-8031-9bdb-d526e3fc74a7",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:13:00.000Z",
-        "last_edited_time": "2025-05-15T16:21:00.000Z",
+        "created_time": "2024-10-29T14:23:00.000Z",
+        "last_edited_time": "2024-10-29T14:24:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -108,13 +108,13 @@
         "has_children": false,
         "archived": false,
         "in_trash": false,
-        "type": "to_do",
-        "to_do": {
+        "type": "paragraph",
+        "paragraph": {
             "rich_text": [
                 {
                     "type": "text",
                     "text": {
-                        "content": "src/main/java\ub294 \uc18c\uc2a4\ucf54\ub4dc \uc788\ub294 \ud30c\uc77c\uc785\ub2c8\ub2e4. \uadf8\ub7fc \ub8e8\ud2b8 \uc544\ub798 src\\main\\webapp\uc740 \ubb58\uae4c\uc694?",
+                        "content": "\uc0ac\uc124IP\uc5d0\uc11c \uac19\uc740 \uacf5\uc778IP\uc544\ub798\uc5d0 \uc788\ub294 \uc0ac\uc124IP\ub85c \uac00\ub824\uace0 \uacf5\uc778IP\ub97c \uc0ac\uc6a9\ud574\uc11c",
                         "link": null
                     },
                     "annotations": {
@@ -125,23 +125,22 @@
                         "code": false,
                         "color": "default"
                     },
-                    "plain_text": "src/main/java\ub294 \uc18c\uc2a4\ucf54\ub4dc \uc788\ub294 \ud30c\uc77c\uc785\ub2c8\ub2e4. \uadf8\ub7fc \ub8e8\ud2b8 \uc544\ub798 src\\main\\webapp\uc740 \ubb58\uae4c\uc694?",
+                    "plain_text": "\uc0ac\uc124IP\uc5d0\uc11c \uac19\uc740 \uacf5\uc778IP\uc544\ub798\uc5d0 \uc788\ub294 \uc0ac\uc124IP\ub85c \uac00\ub824\uace0 \uacf5\uc778IP\ub97c \uc0ac\uc6a9\ud574\uc11c",
                     "href": null
                 }
             ],
-            "checked": false,
             "color": "default"
         }
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-8023-ae1e-c1d1ec2344f3",
+        "id": "12922086-c5a0-8175-8dc7-c95ac9d64db9",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:13:00.000Z",
-        "last_edited_time": "2025-05-15T16:13:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -153,70 +152,21 @@
         "has_children": false,
         "archived": false,
         "in_trash": false,
-        "type": "image",
-        "image": {
-            "caption": [],
-            "type": "file",
-            "file": {
-                "url": "https://prod-files-secure.s3.us-west-2.amazonaws.com/a3e11562-4372-438f-82a2-d7c92f037b47/e8fce065-6e9b-4758-8201-eb2568e895af/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-05-16_010741.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4665HCS5MJJ%2F20250616%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250616T204701Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHwaCXVzLXdlc3QtMiJHMEUCIFy%2FAaPR4%2FyR%2F80ukFhoOfFDi57UgErD3IBYqcsIbmsNAiEAjabg0iG7Qd2mbDogGNK56%2B55dQPouGER6Hjwx0VdJewq%2FwMIZBAAGgw2Mzc0MjMxODM4MDUiDAfUIB79gXbnae14RircA33%2F7084zOIIPcDCCqrq0Lw1j1LWeDOSX1sAxu6Em%2BR07TtUiwl4ZXlvYvpvc7FzcOnWXYTfYtB8%2Fhk6jeorFk%2B36RetUM8eZDUUj8mPESaHAcq5q1ccS9rF8Ym5zvzyQVg7Lxl4R8KOd%2B9buZ72cCtzU5FFyXhd2EU026de8LjMY%2Fuj2xwCAkm%2BFgC8GwV%2FgZ5fBhlowctUWc0hFZFJdWTZ1LGG2%2FHQDMP7GfrrshWgxQpe568%2B2SbDcgZbxsgLeJIlX%2F8bE5N492WMDyZSGnTnKF0G%2B4ZnER026frri%2BSJgngEtLgAY59HDQycWybIO2%2F06cAGszIEutPvbdNEbUAp2OUPjePCV%2FiGLxFV%2BlHmfW7JYcc1JIf3tgYCqBwK%2B1u87dbuADP%2Bjr%2BK0hGs1%2BI74swMALN2mPozwW8rxvLM4GEJfbolEz%2BZtlJlPGpx%2BZJQ27xh0tydL1Gw%2FG05GJfwYFVE1%2FFCvOXYbj9emR7en%2BzVv51bco0FWoX7S%2FAuZJ%2Ft5IRdCk7G8XdiEFZaH%2Fh7WzYk8nERD%2BOgbvne%2F3wnf6Tsm6bUXBaP9FF2RD2pEpL61GrYU8WYYMt4%2FXmQFVYjB2tsM6QdsdThEi7EvRDUeVDOVreG%2Fqs1E%2BAdMODfwcIGOqUBf%2FzLiL%2FCxvB%2BwpXYHjNrF3nAr2F1DjD%2BmSdiP94hdcywbEUIAEVwUhiM6w859sFqsfy2Xbow8%2FenjurSOH%2F0pTADkvuRMFK4Pg8VCXtEvQ706SideMb3npJ%2F59ltVpt%2Boh7D9ry6KiDbk%2F1qS1nh3TxJ%2FpC7cnK7Q7WS9H7ItiE9IRhOIe%2Bs2VtsbKy4VV0aQdMZBfxmQBb%2BgQB0XIv7ES4qAat2&X-Amz-Signature=bcd3cac2c0c15ae3ff9e46a492b067bb053332bfa1e96a1ca44a1f6235dc622f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
-                "expiry_time": "2025-06-16T21:47:01.407Z"
-            }
-        }
-    },
-    {
-        "object": "block",
-        "id": "1f422086-c5a0-8070-8abc-d64e674df74d",
-        "parent": {
-            "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
-        },
-        "created_time": "2025-05-15T16:18:00.000Z",
-        "last_edited_time": "2025-05-15T16:18:00.000Z",
-        "created_by": {
-            "object": "user",
-            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
-        },
-        "last_edited_by": {
-            "object": "user",
-            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
-        },
-        "has_children": false,
-        "archived": false,
-        "in_trash": false,
-        "type": "to_do",
-        "to_do": {
-            "rich_text": [
-                {
-                    "type": "text",
-                    "text": {
-                        "content": "\uc774\ud074\ub9bd\uc2a4\uc5d0\uc11c src\ub97c \ub450\uac1c\ub85c \ub098\ub220\ub193\uc740 \uc774\uc720",
-                        "link": null
-                    },
-                    "annotations": {
-                        "bold": false,
-                        "italic": false,
-                        "strikethrough": false,
-                        "underline": false,
-                        "code": false,
-                        "color": "default"
-                    },
-                    "plain_text": "\uc774\ud074\ub9bd\uc2a4\uc5d0\uc11c src\ub97c \ub450\uac1c\ub85c \ub098\ub220\ub193\uc740 \uc774\uc720",
-                    "href": null
-                }
-            ],
-            "checked": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [],
             "color": "default"
         }
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-803e-8a73-c81afb5d8e57",
+        "id": "12922086-c5a0-81ef-97aa-fbd7bdf17ce5",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -255,13 +205,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-80c3-9498-c557ab3ec6ed",
+        "id": "12922086-c5a0-816f-aacd-d0c8c6c38f60",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -299,13 +249,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-80c0-a9eb-c35deb6549a9",
+        "id": "12922086-c5a0-8170-9562-cfaa28a5b862",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:16:00.000Z",
-        "last_edited_time": "2025-05-15T16:17:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-29T14:24:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -323,7 +273,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "content": "\uac01\uac01 \ub2e4\ub978 src\ud30c\uc77c\uc774 \uc544\ub2cc \uac19\uc740 src/main \uc544\ub798 java\uc640 webapp\uac00 \uc788\ub294\uac83 \uc774\ub2e4.",
+                        "content": "\ub8e8\ud504\ubc31\uc774 \uc65c \uc77c\uc5b4\ub098\ub294\uc9c0 \uc54c\uc558\uc5b4",
                         "link": null
                     },
                     "annotations": {
@@ -334,7 +284,7 @@
                         "code": false,
                         "color": "default"
                     },
-                    "plain_text": "\uac01\uac01 \ub2e4\ub978 src\ud30c\uc77c\uc774 \uc544\ub2cc \uac19\uc740 src/main \uc544\ub798 java\uc640 webapp\uac00 \uc788\ub294\uac83 \uc774\ub2e4.",
+                    "plain_text": "\ub8e8\ud504\ubc31\uc774 \uc65c \uc77c\uc5b4\ub098\ub294\uc9c0 \uc54c\uc558\uc5b4",
                     "href": null
                 }
             ],
@@ -343,13 +293,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-80e1-b267-e52f12bd66c2",
+        "id": "12e22086-c5a0-80fb-b762-fd5bc2c5b55c",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:15:00.000Z",
+        "created_time": "2024-10-29T14:24:00.000Z",
+        "last_edited_time": "2024-10-29T14:26:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -367,7 +317,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "content": "src/main/java : \ubc31\uc5d4\ub4dc \uc790\ubc14 \uc18c\uc2a4 \ucf54\ub4dc",
+                        "content": "\uc0ac\uc124IP\uc5d0\uc11c \uc0ac\uc124IP\ub85c \uac00\ub824\uba74 \uac19\uc740 \uac19\uc740 \uc11c\ube0c\ub137 \ub9c8\uc2a4\ud06c\ub97c \uac00\uc9c0\uace0 \uc788\uc5b4\uc11c? \ucc3e\uc744\uc218 \uc5c6\uc74c,",
                         "link": null
                     },
                     "annotations": {
@@ -378,7 +328,7 @@
                         "code": false,
                         "color": "default"
                     },
-                    "plain_text": "src/main/java : \ubc31\uc5d4\ub4dc \uc790\ubc14 \uc18c\uc2a4 \ucf54\ub4dc",
+                    "plain_text": "\uc0ac\uc124IP\uc5d0\uc11c \uc0ac\uc124IP\ub85c \uac00\ub824\uba74 \uac19\uc740 \uac19\uc740 \uc11c\ube0c\ub137 \ub9c8\uc2a4\ud06c\ub97c \uac00\uc9c0\uace0 \uc788\uc5b4\uc11c? \ucc3e\uc744\uc218 \uc5c6\uc74c,",
                     "href": null
                 }
             ],
@@ -387,13 +337,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-801a-9ec9-e0d84da0bd00",
+        "id": "12e22086-c5a0-8089-807e-f67111bbaadb",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:15:00.000Z",
-        "last_edited_time": "2025-05-15T16:15:00.000Z",
+        "created_time": "2024-10-29T14:26:00.000Z",
+        "last_edited_time": "2024-10-29T14:27:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -411,7 +361,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "content": "src/main/webapp : \uc6f9 \ub9ac\uc18c\uc2a4 \ub8e8\ud2b8 \ub514\ub809\ud1a0\ub9ac",
+                        "content": "\uadf8\ub9ac\uace0 \uacf5\uc778 IP\uc8fc\uc18c\ub97c \ubaa9\uc801\uc9c0\ub85c \uc791\uc131\ud574 \ub193\uace0 \uadf8 \uacf5\uc778IP\uc8fc\uc18c \uc548\uc758 \uc0ac\uc124IP\uc8fc\uc18c\ub294 ",
                         "link": null
                     },
                     "annotations": {
@@ -422,7 +372,7 @@
                         "code": false,
                         "color": "default"
                     },
-                    "plain_text": "src/main/webapp : \uc6f9 \ub9ac\uc18c\uc2a4 \ub8e8\ud2b8 \ub514\ub809\ud1a0\ub9ac",
+                    "plain_text": "\uadf8\ub9ac\uace0 \uacf5\uc778 IP\uc8fc\uc18c\ub97c \ubaa9\uc801\uc9c0\ub85c \uc791\uc131\ud574 \ub193\uace0 \uadf8 \uacf5\uc778IP\uc8fc\uc18c \uc548\uc758 \uc0ac\uc124IP\uc8fc\uc18c\ub294 ",
                     "href": null
                 }
             ],
@@ -431,13 +381,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-80da-b44a-e50ca722a0e6",
+        "id": "12e22086-c5a0-802b-8f36-efe547a7b4fc",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:15:00.000Z",
-        "last_edited_time": "2025-05-15T16:15:00.000Z",
+        "created_time": "2024-10-29T14:27:00.000Z",
+        "last_edited_time": "2024-10-29T14:29:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -455,7 +405,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "content": "src/main/resource : \ubc31\uc5d4\ub4dc \ub9ac\uc18c\uc2a4",
+                        "content": "\ub0b4\ubd80\uc5d0\uc11c \uacf5\uc778IP\uc8fc\uc18c\ub85c \ubaa9\uc801\uc9c0\ub97c \ucc3e\uc73c\ub824\uba74 \ud3ec\uc6cc\ub529 \ud14c\uc774\ube14\uc5d0 \uc124\uc815\uc744 \ud574\uc918\uc57c\ud568",
                         "link": null
                     },
                     "annotations": {
@@ -466,7 +416,7 @@
                         "code": false,
                         "color": "default"
                     },
-                    "plain_text": "src/main/resource : \ubc31\uc5d4\ub4dc \ub9ac\uc18c\uc2a4",
+                    "plain_text": "\ub0b4\ubd80\uc5d0\uc11c \uacf5\uc778IP\uc8fc\uc18c\ub85c \ubaa9\uc801\uc9c0\ub97c \ucc3e\uc73c\ub824\uba74 \ud3ec\uc6cc\ub529 \ud14c\uc774\ube14\uc5d0 \uc124\uc815\uc744 \ud574\uc918\uc57c\ud568",
                     "href": null
                 }
             ],
@@ -475,13 +425,57 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-8055-8613-fb4f15723687",
+        "id": "12e22086-c5a0-80d3-8e78-c23f8256cf7d",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:16:00.000Z",
-        "last_edited_time": "2025-05-15T16:16:00.000Z",
+        "created_time": "2024-10-29T14:29:00.000Z",
+        "last_edited_time": "2024-10-29T14:30:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\uadf8\uac8c NAT \ub8e8\ud504\ubc31 NAT Loopback",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\uadf8\uac8c NAT \ub8e8\ud504\ubc31 NAT Loopback",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "12e22086-c5a0-80b4-8f96-feecf208a61a",
+        "parent": {
+            "type": "page_id",
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
+        },
+        "created_time": "2024-10-29T14:30:00.000Z",
+        "last_edited_time": "2024-10-29T14:30:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -501,13 +495,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-80de-880d-e2ccaf7b9536",
+        "id": "12e22086-c5a0-8009-a41d-c2d4d273a04e",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:17:00.000Z",
-        "last_edited_time": "2025-05-15T16:18:00.000Z",
+        "created_time": "2024-10-29T14:30:00.000Z",
+        "last_edited_time": "2024-10-29T14:31:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -525,7 +519,7 @@
                 {
                     "type": "text",
                     "text": {
-                        "content": "\uadf8\ub7fc \uc65c \uc774\ud074\ub9bd\uc2a4\uc5d0\uc11c\ub294 src\uac00 \ub450\uac1c \uc778\uac83 \ucc98\ub7fc \ubcf4\uc5ec\uc904\uae4c?",
+                        "content": "\ub2e4\ub978 \ubc29\ubc95\uc73c\ub85c\ub294",
                         "link": null
                     },
                     "annotations": {
@@ -536,7 +530,7 @@
                         "code": false,
                         "color": "default"
                     },
-                    "plain_text": "\uadf8\ub7fc \uc65c \uc774\ud074\ub9bd\uc2a4\uc5d0\uc11c\ub294 src\uac00 \ub450\uac1c \uc778\uac83 \ucc98\ub7fc \ubcf4\uc5ec\uc904\uae4c?",
+                    "plain_text": "\ub2e4\ub978 \ubc29\ubc95\uc73c\ub85c\ub294",
                     "href": null
                 }
             ],
@@ -545,13 +539,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-806e-861b-eeefadbd6d03",
+        "id": "12e22086-c5a0-8027-b1ab-e738c67d230c",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:16:00.000Z",
-        "last_edited_time": "2025-05-15T16:19:00.000Z",
+        "created_time": "2024-10-29T14:31:00.000Z",
+        "last_edited_time": "2024-10-29T14:31:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -563,13 +557,13 @@
         "has_children": false,
         "archived": false,
         "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
+        "type": "bulleted_list_item",
+        "bulleted_list_item": {
             "rich_text": [
                 {
                     "type": "text",
                     "text": {
-                        "content": "\ubcf4\uae30 \uc27d\uac8c \ub9cc\ub4e4\ub824\uace0",
+                        "content": "DNS \ub9ac\uc878\ubc84 \uc124\uc815",
                         "link": null
                     },
                     "annotations": {
@@ -580,7 +574,7 @@
                         "code": false,
                         "color": "default"
                     },
-                    "plain_text": "\ubcf4\uae30 \uc27d\uac8c \ub9cc\ub4e4\ub824\uace0",
+                    "plain_text": "DNS \ub9ac\uc878\ubc84 \uc124\uc815",
                     "href": null
                 }
             ],
@@ -589,13 +583,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-803d-a928-e181d204b1d0",
+        "id": "12e22086-c5a0-80e5-8318-f1c07bd0b504",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:19:00.000Z",
-        "last_edited_time": "2025-05-15T16:19:00.000Z",
+        "created_time": "2024-10-29T14:31:00.000Z",
+        "last_edited_time": "2024-10-29T14:31:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -607,21 +601,39 @@
         "has_children": false,
         "archived": false,
         "in_trash": false,
-        "type": "paragraph",
-        "paragraph": {
-            "rich_text": [],
+        "type": "bulleted_list_item",
+        "bulleted_list_item": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ub9ac\ubc84\uc2a4 \ud504\ub85d\uc2dc \uc11c\ubc84 \uc124\uc815",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\ub9ac\ubc84\uc2a4 \ud504\ub85d\uc2dc \uc11c\ubc84 \uc124\uc815",
+                    "href": null
+                }
+            ],
             "color": "default"
         }
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-8013-9ec6-fe8cf661571c",
+        "id": "12922086-c5a0-8164-81f5-ecddecb1ab40",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -660,13 +672,13 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-8050-b72d-f1dfd44da0ca",
+        "id": "12922086-c5a0-8115-a26a-f772575318d0",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -704,13 +716,57 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-801a-ab42-c12e68b289c5",
+        "id": "12e22086-c5a0-80bb-a730-e1e0387f46d2",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-29T14:24:00.000Z",
+        "last_edited_time": "2024-10-29T14:24:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ub124\ud2b8\uc6cc\ud06c\ub294 \uc7ac\ubc0c\uad6c\ub098 \uc54c\uc558\uc5b4",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\ub124\ud2b8\uc6cc\ud06c\ub294 \uc7ac\ubc0c\uad6c\ub098 \uc54c\uc558\uc5b4",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "12922086-c5a0-8179-8366-c45e83ae7d2c",
+        "parent": {
+            "type": "page_id",
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
+        },
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -749,13 +805,101 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-802d-9a5e-c6645d511f5c",
+        "id": "12e22086-c5a0-8095-b9d9-d06234a1e31a",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-29T14:35:00.000Z",
+        "last_edited_time": "2024-10-29T14:35:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\uad50\uc218\ub2d8\uc5d0\uac8c \uc65c \ub8e8\ud504\ubc31\uc774 \uc0dd\uae30\ub294\uc9c0 \uc9c8\ubb38\ud55c\uac83",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\uad50\uc218\ub2d8\uc5d0\uac8c \uc65c \ub8e8\ud504\ubc31\uc774 \uc0dd\uae30\ub294\uc9c0 \uc9c8\ubb38\ud55c\uac83",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "12e22086-c5a0-80bc-bdd0-f5062992e5f1",
+        "parent": {
+            "type": "page_id",
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
+        },
+        "created_time": "2024-10-29T14:35:00.000Z",
+        "last_edited_time": "2024-10-29T14:36:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\u2192 \uac01\uac01\uc758 \uc0ac\uc124 IP\uc8fc\uc18c\uac00 \uac19\uc544\uc11c",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\u2192 \uac01\uac01\uc758 \uc0ac\uc124 IP\uc8fc\uc18c\uac00 \uac19\uc544\uc11c",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "12922086-c5a0-81f9-8230-d7357bc017e2",
+        "parent": {
+            "type": "page_id",
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
+        },
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -794,13 +938,103 @@
     },
     {
         "object": "block",
-        "id": "1f422086-c5a0-80e7-bc6d-f2948cb75943",
+        "id": "12e22086-c5a0-80d5-8777-f1b68b5f6f5c",
         "parent": {
             "type": "page_id",
-            "page_id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8"
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
         },
-        "created_time": "2025-05-15T16:11:00.000Z",
-        "last_edited_time": "2025-05-15T16:11:00.000Z",
+        "created_time": "2024-10-29T14:36:00.000Z",
+        "last_edited_time": "2024-10-29T14:37:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "to_do",
+        "to_do": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ub9d0\uc744 \ub611\ubc14\ub85c \ud560\uac83",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\ub9d0\uc744 \ub611\ubc14\ub85c \ud560\uac83",
+                    "href": null
+                }
+            ],
+            "checked": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "12e22086-c5a0-80d4-a5fa-d6733fe0dad1",
+        "parent": {
+            "type": "page_id",
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
+        },
+        "created_time": "2024-10-29T14:37:00.000Z",
+        "last_edited_time": "2024-10-29T14:37:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "to_do",
+        "to_do": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ub2e4\ub978\ubc29\ubc95 \ucc3e\uc544\ubcfc\uac83",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\ub2e4\ub978\ubc29\ubc95 \ucc3e\uc544\ubcfc\uac83",
+                    "href": null
+                }
+            ],
+            "checked": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "12922086-c5a0-81cf-9a60-dfd6bd11819d",
+        "parent": {
+            "type": "page_id",
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
+        },
+        "created_time": "2024-10-24T01:44:00.000Z",
+        "last_edited_time": "2024-10-24T01:44:00.000Z",
         "created_by": {
             "object": "user",
             "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
@@ -834,6 +1068,50 @@
                 }
             ],
             "is_toggleable": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "12e22086-c5a0-80b6-b396-f38db22d9fb0",
+        "parent": {
+            "type": "page_id",
+            "page_id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f"
+        },
+        "created_time": "2024-10-29T14:37:00.000Z",
+        "last_edited_time": "2024-10-29T14:37:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ub9d0\uc744 \uc815\ub9ac\ud574\uc11c \ubb3c\uc5b4\ubcf8\uac83",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\ub9d0\uc744 \uc815\ub9ac\ud574\uc11c \ubb3c\uc5b4\ubcf8\uac83",
+                    "href": null
+                }
+            ],
             "color": "default"
         }
     }
