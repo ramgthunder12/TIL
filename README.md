@@ -8,3 +8,10 @@
 - [`java/`](./java) 자바 관련 디렉토리:
   - [`This_is_Java/`](./java/This_is_Java) : 이것이 자바다 도서를 바탕으로 자바 기초 문법 실습
   - [`dev_skill_interview_note/`](./java/dev_skill_interview_note) : 개발자 기술 면접 노트를 바탕으로 자바 알고리즘 문제 연습
+
+
+## 📌 TIL 사용 기술
+
+- Python
+- Notion API
+- GitHub Actions
