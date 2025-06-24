@@ -1,0 +1,1325 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "21122086-c5a0-805d-9873-db6f402af750",
+            "created_time": "2025-06-13T12:19:00.000Z",
+            "last_edited_time": "2025-06-13T12:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-13",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL19",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL19",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL19-21122086c5a0805d9873db6f402af750",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL19-21122086c5a0805d9873db6f402af750"
+        },
+        {
+            "object": "page",
+            "id": "21122086-c5a0-80a3-b93f-fec289e5c4d1",
+            "created_time": "2025-06-13T05:47:00.000Z",
+            "last_edited_time": "2025-06-13T12:59:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-13",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL18",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL18",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL18-21122086c5a080a3b93ffec289e5c4d1",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL18-21122086c5a080a3b93ffec289e5c4d1"
+        },
+        {
+            "object": "page",
+            "id": "20e22086-c5a0-80ef-81a1-d94ee84dc9d2",
+            "created_time": "2025-06-10T14:17:00.000Z",
+            "last_edited_time": "2025-06-10T14:18:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": null
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL17",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL17",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL17-20e22086c5a080ef81a1d94ee84dc9d2",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL17-20e22086c5a080ef81a1d94ee84dc9d2"
+        },
+        {
+            "object": "page",
+            "id": "20b22086-c5a0-80b5-ad22-c0a6eba45a20",
+            "created_time": "2025-06-07T11:09:00.000Z",
+            "last_edited_time": "2025-06-07T13:17:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-07",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL16",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL16",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL16-20b22086c5a080b5ad22c0a6eba45a20",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL16-20b22086c5a080b5ad22c0a6eba45a20"
+        },
+        {
+            "object": "page",
+            "id": "20b22086-c5a0-8078-a8bb-db81cab9778f",
+            "created_time": "2025-06-07T11:07:00.000Z",
+            "last_edited_time": "2025-06-07T11:09:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-07",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL15",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL15",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL15-20b22086c5a08078a8bbdb81cab9778f",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL15-20b22086c5a08078a8bbdb81cab9778f"
+        },
+        {
+            "object": "page",
+            "id": "20b22086-c5a0-8098-928f-e7c4990a04f0",
+            "created_time": "2025-06-07T11:05:00.000Z",
+            "last_edited_time": "2025-06-11T07:46:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-07",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL14",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL14",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL14-20b22086c5a08098928fe7c4990a04f0",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL14-20b22086c5a08098928fe7c4990a04f0"
+        },
+        {
+            "object": "page",
+            "id": "20a22086-c5a0-80cb-83c2-fe0cce0ba6bd",
+            "created_time": "2025-06-06T14:15:00.000Z",
+            "last_edited_time": "2025-06-06T14:19:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-06",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "c49c2a92-3809-4cba-a987-19e1ead68da9",
+                            "name": "\uae30\uc220\uc815\ub9ac\ubc29\ubc95",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL13",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL13",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL13-20a22086c5a080cb83c2fe0cce0ba6bd",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL13-20a22086c5a080cb83c2fe0cce0ba6bd"
+        },
+        {
+            "object": "page",
+            "id": "20822086-c5a0-8062-8981-e8d2cad66ae5",
+            "created_time": "2025-06-04T04:46:00.000Z",
+            "last_edited_time": "2025-06-04T08:26:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-04",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL12",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL12",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL12-20822086c5a080628981e8d2cad66ae5",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL12-20822086c5a080628981e8d2cad66ae5"
+        },
+        {
+            "object": "page",
+            "id": "20722086-c5a0-80f4-8204-e6acba0694ec",
+            "created_time": "2025-06-03T12:36:00.000Z",
+            "last_edited_time": "2025-06-10T14:17:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-06-03",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "f83eb53d-4ee1-47e0-bb71-1b04364672fb",
+                            "name": "GitHub",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL11",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL11",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL11-20722086c5a080f48204e6acba0694ec",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL11-20722086c5a080f48204e6acba0694ec"
+        },
+        {
+            "object": "page",
+            "id": "1f922086-c5a0-8062-841b-e1041636c94a",
+            "created_time": "2025-05-20T13:15:00.000Z",
+            "last_edited_time": "2025-05-20T16:54:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-20",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "962469ab-eb9f-429c-a49b-8952dbe86295",
+                            "name": "Ubuntu",
+                            "color": "default"
+                        },
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        },
+                        {
+                            "id": "c966641d-3ca9-4436-a3cd-6af2e20904fd",
+                            "name": "Windows",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL10",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL10",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL10-1f922086c5a08062841be1041636c94a",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL10-1f922086c5a08062841be1041636c94a"
+        },
+        {
+            "object": "page",
+            "id": "1f422086-c5a0-807b-bd4d-ffe3502e74f8",
+            "created_time": "2025-05-15T16:11:00.000Z",
+            "last_edited_time": "2025-05-15T16:22:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-05-16",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fe64251f-6ecd-4f3c-88b0-2e06c5220017",
+                            "name": "Project",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "16826bfe-cc85-4015-b466-a47771bcfc96",
+                            "name": "MVC",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL9",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL9",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL9-1f422086c5a0807bbd4dffe3502e74f8",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL9-1f422086c5a0807bbd4dffe3502e74f8"
+        },
+        {
+            "object": "page",
+            "id": "1b222086-c5a0-808b-ac09-c64ff8e7c2c8",
+            "created_time": "2025-03-10T13:36:00.000Z",
+            "last_edited_time": "2025-05-15T16:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-04-23",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL8",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL8",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL8-1b222086c5a0808bac09c64ff8e7c2c8",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL8-1b222086c5a0808bac09c64ff8e7c2c8"
+        },
+        {
+            "object": "page",
+            "id": "1a422086-c5a0-80e0-bf61-fb8c57fe7dd9",
+            "created_time": "2025-02-24T05:06:00.000Z",
+            "last_edited_time": "2025-02-24T11:58:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-02-24",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "962469ab-eb9f-429c-a49b-8952dbe86295",
+                            "name": "Ubuntu",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL7",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL7",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL7-1a422086c5a080e0bf61fb8c57fe7dd9",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL7-1a422086c5a080e0bf61fb8c57fe7dd9"
+        },
+        {
+            "object": "page",
+            "id": "17d22086-c5a0-80df-8128-f40042c85862",
+            "created_time": "2025-01-16T11:21:00.000Z",
+            "last_edited_time": "2025-01-16T11:44:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2025-01-16",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL6",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL6",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL6-17d22086c5a080df8128f40042c85862",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL6-17d22086c5a080df8128f40042c85862"
+        },
+        {
+            "object": "page",
+            "id": "13922086-c5a0-80b8-a007-ca1344bb2ff9",
+            "created_time": "2024-11-09T00:58:00.000Z",
+            "last_edited_time": "2024-11-22T01:30:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-11-18",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "962469ab-eb9f-429c-a49b-8952dbe86295",
+                            "name": "Ubuntu",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL 5",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL 5",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL-5-13922086c5a080b8a007ca1344bb2ff9",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL-5-13922086c5a080b8a007ca1344bb2ff9"
+        },
+        {
+            "object": "page",
+            "id": "bd3d88bf-916e-4d35-b186-744b56071ec0",
+            "created_time": "2024-10-24T01:44:00.000Z",
+            "last_edited_time": "2024-11-06T16:30:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-11-07",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0daaf054-fa93-458e-9d24-efba5a7ac900",
+                            "name": "Java",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL 4",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL 4",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL-4-bd3d88bf916e4d35b186744b56071ec0",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL-4-bd3d88bf916e4d35b186744b56071ec0"
+        },
+        {
+            "object": "page",
+            "id": "cee0c7f3-c654-4f24-aa96-23ab9064c53f",
+            "created_time": "2024-10-24T01:44:00.000Z",
+            "last_edited_time": "2024-11-06T16:30:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-10-29",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e863dffc-a536-45ee-81a0-c06fc805054e",
+                            "name": "Network",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL 3",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL 3",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL-3-cee0c7f3c6544f24aa9623ab9064c53f",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL-3-cee0c7f3c6544f24aa9623ab9064c53f"
+        },
+        {
+            "object": "page",
+            "id": "11f22086-c5a0-809c-aa1a-f7961d456e89",
+            "created_time": "2024-10-14T09:25:00.000Z",
+            "last_edited_time": "2024-10-14T09:54:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-10-14T09:20:00.000+09:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "7f614db9-4c8f-4d29-a95f-74d68e95e299",
+                            "name": "Cloud",
+                            "color": "red"
+                        },
+                        {
+                            "id": "962469ab-eb9f-429c-a49b-8952dbe86295",
+                            "name": "Ubuntu",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL 1",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL 1",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL-1-11f22086c5a0809caa1af7961d456e89",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL-1-11f22086c5a0809caa1af7961d456e89"
+        },
+        {
+            "object": "page",
+            "id": "11f22086-c5a0-8044-9c32-dbac5a789455",
+            "created_time": "2024-10-14T05:49:00.000Z",
+            "last_edited_time": "2024-10-16T02:31:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "11f22086-c5a0-80a2-9930-cb86a14d3fd5"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "\uc791\uc131\uc77c": {
+                    "id": "STIP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-10-14T14:45:00.000+09:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "\uce74\ud14c\uace0\ub9ac": {
+                    "id": "ggg%5E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e863dffc-a536-45ee-81a0-c06fc805054e",
+                            "name": "Network",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "\uc774\ub984": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "TIL 2",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "TIL 2",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/TIL-2-11f22086c5a080449c32dbac5a789455",
+            "public_url": "https://astonishing-archer-8d6.notion.site/TIL-2-11f22086c5a080449c32dbac5a789455"
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "18dd229a-fa3b-4809-852d-3a1b2c75cac3"
+}
