@@ -2,9 +2,9 @@
 페이지 110 ~
 
 1. 주어진 문자열을 반전 시키는 프로그램을 작성하시오.
-  [ReverseString3](./ReverseString3.java)
-  [ReverseString2](./ReverseString2.java)
-  [ReverseString1](./ReverseString.java)
+  [실습 코드1 ReverseString3](./ReverseString3.java)
+  [실습 코드2 ReverseString2](./ReverseString2.java)
+  [실습 코드3 ReverseString1](./ReverseString.java)
 
   [입출력 예]
   입력 -> ABCDE
@@ -12,7 +12,7 @@
 
 
 2. 주어진 문자열이 회문인지 확인하는 프로그램을 작성하시오. 회문은 앞으로 읽으나 뒤로 읽으나 같은 단어 또는 문장을 의미합니다. 
-  [JudgementString1](./JudgementString.java)
+  [실습 코드1 JudgementString1](./JudgementString.java)
 
   [입출력 예]
   입력 -> Level
@@ -21,20 +21,22 @@
 
 
 3. 배열 numbers에 음수, 양수, 0 등의 숫자가 임의로 들어가 있습니다. 유형별로 개수를 파악하여 비율로 표시하시오. 단, 소수점은 6자리까지 표현합니다.
+   [실습 코드1 NumbersRate](./NumbersRate.java)
+   [실습 코드2 NumbersRate2(enum)](./NumbersRate2.java)
 int[] numbers = {-12, 33, -4, 0, 0, 9, 1, -2, 11, 0};
 
 
 
-4. main 매서드에서 input으로 받은 시간 값(AM, PM)을 24시간 포맷으로 변경하시오.
+5. main 매서드에서 input으로 받은 시간 값(AM, PM)을 24시간 포맷으로 변경하시오.
 [입출력 예]
 입력 -> 07:05:45 PM
 출력 -> 19:05:45
 
 
-5. 최소 10개 이상의 integer형 Array가 주어졌을 때 가장 작은 값의 index와 value를 출력하시오.
+6. 최소 10개 이상의 integer형 Array가 주어졌을 때 가장 작은 값의 index와 value를 출력하시오.
 
 
-6.  SNS 기능 구현을 하는 프로그램을 작성할 때, 현재 읽고 있는 콘텐츠가 몇 시간 전에 작성 되어 있는지 표기하시오. 주어진 조건은 다음과 같습니다.
+7.  SNS 기능 구현을 하는 프로그램을 작성할 때, 현재 읽고 있는 콘텐츠가 몇 시간 전에 작성 되어 있는지 표기하시오. 주어진 조건은 다음과 같습니다.
 - input은 yyyy-MM-dd HH:mm:ss(예. 2023-04-18 00:42:24) 형태로 현재 시간보다 과거 시간이다.
 - 현재 시간과 비교하여 1시간 이내라면 xx분 전으로 표기(1분 이하는 1분 전으로 표기)
 - 24시간 내에 작성되었다면 xx시간 전으로 표기
