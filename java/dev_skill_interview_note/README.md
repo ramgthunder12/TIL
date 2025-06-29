@@ -2,9 +2,9 @@
 페이지 110 ~
 
 1. 주어진 문자열을 반전 시키는 프로그램을 작성하시오.
-  [실습 코드1 ReverseString3](./ReverseString3.java)
-  [실습 코드2 ReverseString2](./ReverseString2.java)
-  [실습 코드3 ReverseString1](./ReverseString.java)
+  - [실습 코드1 ReverseString3](./ReverseString3.java)
+  - [실습 코드2 ReverseString2](./ReverseString2.java)
+  - [실습 코드3 ReverseString1](./ReverseString.java)
 
   [입출력 예]
   입력 -> ABCDE
@@ -12,7 +12,7 @@
 
 
 2. 주어진 문자열이 회문인지 확인하는 프로그램을 작성하시오. 회문은 앞으로 읽으나 뒤로 읽으나 같은 단어 또는 문장을 의미합니다. 
-  [실습 코드1 JudgementString1](./JudgementString.java)
+  - [실습 코드1 JudgementString1](./JudgementString.java)
 
   [입출력 예]
   입력 -> Level
@@ -21,8 +21,8 @@
 
 
 3. 배열 numbers에 음수, 양수, 0 등의 숫자가 임의로 들어가 있습니다. 유형별로 개수를 파악하여 비율로 표시하시오. 단, 소수점은 6자리까지 표현합니다.
-   [실습 코드1 NumbersRate](./NumbersRate.java)
-   [실습 코드2 NumbersRate2(enum)](./NumbersRate2.java)
+   - [실습 코드1 NumbersRate](./NumbersRate.java)
+   - [실습 코드2 NumbersRate2(enum)](./NumbersRate2.java)
 int[] numbers = {-12, 33, -4, 0, 0, 9, 1, -2, 11, 0};
 
 
@@ -45,5 +45,10 @@ int[] numbers = {-12, 33, -4, 0, 0, 9, 1, -2, 11, 0};
 
 7. Stack과 Queue의 특징에 대해서 설명하고 간단한 구현 방법을 제시하시오.
 
+8. 프로그래밍 에디터의 코드검사기(괄호 검사기)를 간단하게 구현하시오. 소괄호, 중괄호, 대괄호는 짝이 맞아야 문법 에러가 발생하지 않을 것입니다. 지정된 괄호들의 밸런스(개수)가 맞는지 검증하는 프로그램을 작성합니다. 입력받을 괄호들은 첫 입력 명령어로 들어오는 괄호의 라인 수를 받고, 두 번째 입력부터는 해당 라인만큼의 괄호가 들어옵니다. 즉, 첫 라인에 4라는 숫자를 받으면 그뒷줄부터는 괄호로 구성된 문장이 네 줄 입력됩니다.
 
+ 괄호는 여는 괄호 {, [, ( 와 닫는 괄호 ), ], }로 구성됩니다. 열고 닫는 순서가 맞아야 에러가 발생하지 않습니다. 입력으로 들어온 괄호의 구성이 올바른지 판단하는 프로그램을 작성하여 괄호의 개수가 맞으면 YES, 맞지않으면 NO를 출력하시오.
+ [입출력 예]
+ 3//입력해야 하는 라인 수, 3이 입력되었으므로 총 세 줄의 괄호 문장이 추가 입력되어야함.
+ [{()}]//첫번째라인의 괄호 구성. 가장 안쪽부터 (), [], {} 괄호의 열고 닫는순서가 일치하기 때문에 YES
 
