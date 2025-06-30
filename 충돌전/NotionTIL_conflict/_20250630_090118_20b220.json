@@ -1,0 +1,565 @@
+[
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-8078-b1ba-c47fd8b79cdc",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "heading_1",
+        "heading_1": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Reason : ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Reason : ",
+                    "href": null
+                }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-801a-a6ac-ea0d2570983a",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\uc65c \ud574?",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "gray"
+                    },
+                    "plain_text": "\uc65c \ud574?",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20f22086-c5a0-80aa-8976-c0bb32c86e1f",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-11T07:46:00.000Z",
+        "last_edited_time": "2025-06-11T07:46:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "to_do",
+        "to_do": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "BufferedReader",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "BufferedReader",
+                    "href": null
+                }
+            ],
+            "checked": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20f22086-c5a0-805b-bb20-c28f4fef61e6",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-11T07:46:00.000Z",
+        "last_edited_time": "2025-06-11T07:46:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "to_do",
+        "to_do": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Scanner",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Scanner",
+                    "href": null
+                }
+            ],
+            "checked": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-803a-91e4-d1fba0b6c6dd",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-11T07:46:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "to_do",
+        "to_do": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "BufferedReader VS Scanner",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "BufferedReader VS Scanner",
+                    "href": null
+                }
+            ],
+            "checked": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-801a-89ef-f1f5bc3afe53",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "heading_1",
+        "heading_1": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Action : ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Action : ",
+                    "href": null
+                }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-8096-82a8-c35e52c43a22",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ubb58 \ud588\uc5b4?",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "gray"
+                    },
+                    "plain_text": "\ubb58 \ud588\uc5b4?",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-8033-87c9-ea243a25235c",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-80cb-853f-d1fa685a470c",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "heading_1",
+        "heading_1": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Insight : ",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Insight : ",
+                    "href": null
+                }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-806c-98f8-de6aad9e91e5",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "paragraph",
+        "paragraph": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ubb58 \ub290\uaf08\uc5b4?",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": true,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "gray"
+                    },
+                    "plain_text": "\ubb58 \ub290\uaf08\uc5b4?",
+                    "href": null
+                }
+            ],
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-80d3-8709-f2f7eb98612f",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "heading_2",
+        "heading_2": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\uc798\ud55c\uc810",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\uc798\ud55c\uc810",
+                    "href": null
+                }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-808a-9ac4-e56384b5af95",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "heading_2",
+        "heading_2": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\uac1c\uc120\uc810",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\uac1c\uc120\uc810",
+                    "href": null
+                }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+        }
+    },
+    {
+        "object": "block",
+        "id": "20b22086-c5a0-8045-ba80-d241b6c77480",
+        "parent": {
+            "type": "page_id",
+            "page_id": "20b22086-c5a0-8098-928f-e7c4990a04f0"
+        },
+        "created_time": "2025-06-07T11:05:00.000Z",
+        "last_edited_time": "2025-06-07T11:05:00.000Z",
+        "created_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "last_edited_by": {
+            "object": "user",
+            "id": "66828f29-35c2-40b1-9346-8b0ef9c20741"
+        },
+        "has_children": false,
+        "archived": false,
+        "in_trash": false,
+        "type": "heading_2",
+        "heading_2": {
+            "rich_text": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "\ubc30\uc6b8\uc810",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "\ubc30\uc6b8\uc810",
+                    "href": null
+                }
+            ],
+            "is_toggleable": false,
+            "color": "default"
+        }
+    }
+]
