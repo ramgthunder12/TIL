@@ -26,6 +26,7 @@
 > 배열 numbers에 음수, 양수, 0 등의 숫자가 임의로 들어가 있습니다. 유형별로 개수를 파악하여 비율로 표시하시오. 단, 소수점은 6자리까지 표현합니다.
    * [실습 코드1 NumbersRate](./NumbersRate.java)
    * [실습 코드2 NumbersRate2(enum)](./NumbersRate2.java)
+   * [실습 코드3 NumbersRate3(enum)](./NumbersRate3.java)
 int[] numbers = {-12, 33, -4, 0, 0, 9, 1, -2, 11, 0};
 
 
