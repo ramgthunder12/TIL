@@ -5,7 +5,13 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+  <display-name>edu</display-name>
 
+  <context-param>
+  	<param-name>contextConfig</param-name>
+  	<param-value>/WEB_INF/context.xml</param-value>
+  </context-param>
+  
   <servlet>
     <servlet-name>first</servlet-name>
     <servlet-class>com.edu.test.FirstServlet</servlet-class>
@@ -13,6 +19,23 @@
   <servlet>
   	<servlet-name>addInfo</servlet-name>
   	<servlet-class>com.edu.test.AdditionInfo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>initParam</servlet-name>
+  	<servlet-class>com.edu.test.InitParamServlet</servlet-class>
+  	<init-param>
+  		<param-name>id</param-name>
+  		<param-value>guest</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>password</param-name>
+  		<param-value>1004</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>env</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  	<load-on-startup>1</load-on-startup>
   </servlet>
 
 
@@ -23,6 +46,10 @@
   <servlet-mapping>
   	<servlet-name>addInfo</servlet-name>
   	<url-pattern>/addInfo/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>initParam</servlet-name>
+  	<url-pattern>/init</url-pattern>
   </servlet-mapping>
 	
 </web-app>
