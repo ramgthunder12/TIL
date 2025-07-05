@@ -12,6 +12,30 @@
   	<param-value>/WEB_INF/context.xml</param-value>
   </context-param>
   
+  <filter>
+  	<filter-name>flow1</filter-name>
+  	<filter-class>com.edu.test.FlowFilterOne</filter-class>	
+  </filter>
+  
+  <filter>
+  	<filter-name>flow2</filter-name>
+  	<filter-class>com.edu.test.FlowFilterTwo</filter-class>
+  	<init-param>
+  		<param-name>en</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>flow1</filter-name>
+  	<url-pattern>/flow1</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>flow2</filter-name>
+  	<url-pattern>/flow2</url-pattern>
+  </filter-mapping>
+  
   <servlet>
     <servlet-name>first</servlet-name>
     <servlet-class>com.edu.test.FirstServlet</servlet-class>
