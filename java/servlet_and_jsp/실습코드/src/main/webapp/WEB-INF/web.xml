@@ -5,13 +5,34 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-  <display-name>edu</display-name>
+    <display-name>edu</display-name>
 
-  <context-param>
-  	<param-name>contextConfig</param-name>
-  	<param-value>/WEB_INF/context.xml</param-value>
-  </context-param>
-  
+    <context-param>
+  	  <param-name>contextConfig</param-name>
+  	  <param-value>/WEB_INF/context.xml</param-value>
+    </context-param>
+
+<!--  
+	<listener>
+		<listener-class>com.edu.test.TestServletContextLinstener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>com.edu.test.TestServletContextAttributeListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>com.edu.test.TestSessionListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>com.edu.test.TestSessionAttributeListener</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>com.edu.test.TestRequestListener</listener-class>
+	</listener>
+ 
   <filter>
   	<filter-name>flow1</filter-name>
   	<filter-class>com.edu.test.FlowFilterOne</filter-class>	
@@ -35,6 +56,7 @@
   	<filter-name>flow2</filter-name>
   	<url-pattern>/flow2</url-pattern>
   </filter-mapping>
+ -->
   
   <servlet>
     <servlet-name>first</servlet-name>
@@ -75,5 +97,15 @@
   	<servlet-name>initParam</servlet-name>
   	<url-pattern>/init</url-pattern>
   </servlet-mapping>
+	
+	<error-page>
+		<error-code>405</error-code>
+		<location>/errorHandle</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/errorHandle</location>
+	</error-page>
 	
 </web-app>
