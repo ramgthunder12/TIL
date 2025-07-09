@@ -11,6 +11,13 @@
   	  <param-name>contextConfig</param-name>
   	  <param-value>/WEB_INF/context.xml</param-value>
     </context-param>
+    
+    <jsp-config>
+    	<taglib>
+    		<taglib-uri>http://myTags.com</taglib-uri>
+    		<taglib-location>/WEB-INF/myTag.tld</taglib-location>
+    	</taglib>
+    </jsp-config>
 
 <!--  
 	<listener>
