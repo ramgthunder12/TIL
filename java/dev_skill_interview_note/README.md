@@ -27,6 +27,7 @@
    * [실습 코드1 NumbersRate](./NumbersRate.java)
    * [실습 코드2 NumbersRate2(enum)](./NumbersRate2.java)
    * [실습 코드3 NumbersRate3(enum)](./NumbersRate3.java)
+   * [실습 코드4 NumbersRate4(책 예제)](./NumbersRate4.java)
 int[] numbers = {-12, 33, -4, 0, 0, 9, 1, -2, 11, 0};
 
 
