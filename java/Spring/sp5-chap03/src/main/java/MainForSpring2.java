@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import assembler.Assembler;
-import config.AppCtx;
+import config.AppConfImport2;
 import spring.ChangePasswordService;
 import spring.DuplicateMemberException;
 import spring.MemberInfoPrinter;
@@ -16,13 +16,21 @@ import spring.RegisterRequest;
 import spring.VersionPrinter;
 import spring.WrongIdPasswordException;
 
-public class MainForAssembler {
+public class MainForSpring2 {
 	private static AnnotationConfigApplicationContext ctx = null;
 	
 	public static void main(String[] args) throws IOException {
-		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
+//		ctx = new AnnotationConfigApplicationContext(AppCtx1.class, AppCtx2.class);
+//		ctx = new AnnotationConfigApplicationContext(AppConfImport.class);
+		ctx = new AnnotationConfigApplicationContext(AppConfImport2.class);
 		
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+//		AppCtx1 appConf1 = ctx.getBean(AppCtx1.class);
+//		AppCtx2 appConf2 = ctx.getBean(AppCtx2.class);
+//		
+//		System.out.println(appConf1 != null);//true
+//		System.out.println(appConf2 != null);//true
 		
 		while(true) {
 			System.out.println("명령어를 입력하시오.");

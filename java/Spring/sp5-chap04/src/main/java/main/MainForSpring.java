@@ -1,10 +1,11 @@
+package main;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import assembler.Assembler;
 import config.AppCtx;
 import spring.ChangePasswordService;
 import spring.DuplicateMemberException;
@@ -16,7 +17,7 @@ import spring.RegisterRequest;
 import spring.VersionPrinter;
 import spring.WrongIdPasswordException;
 
-public class MainForAssembler {
+public class MainForSpring {
 	private static AnnotationConfigApplicationContext ctx = null;
 	
 	public static void main(String[] args) throws IOException {
@@ -51,8 +52,6 @@ public class MainForAssembler {
 		}
 	}
 
-	private static Assembler assembler = new Assembler();
-	
 	private static void processNewCommand(String[] arg) {
 		if(arg.length != 5) {
 			printHelp();
