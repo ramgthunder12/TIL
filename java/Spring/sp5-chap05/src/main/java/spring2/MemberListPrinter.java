@@ -5,8 +5,12 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import spring.MemberPrinter;
+import spring.MemberDao;
+import spring.Member;
+import spring.MemberSummaryPrinter;
 
-@Component("listPrinter")
+@Component("s2ListPrinter")
 public class MemberListPrinter {
 	private MemberDao memberDao;
 	private MemberPrinter printer;

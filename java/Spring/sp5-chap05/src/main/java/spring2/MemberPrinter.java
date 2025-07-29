@@ -4,7 +4,9 @@ import java.time.format.DateTimeFormatter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Component;
 
+@Component("s2MemberPrinter")
 public class MemberPrinter {
 //	public void print(Member member) {
 //		System.out.printf("회원 정보 : 아이디 = %d, 이메일 = %s, 이름 = %s, 등록일 = %tF\n"

@@ -1,5 +1,8 @@
 package spring2;
 
+import org.springframework.stereotype.Component;
+
+@Component("s2MemberSummaryPrinter")
 public class MemberSummaryPrinter extends MemberPrinter{
 	@Override
 	public void print(Member member) {

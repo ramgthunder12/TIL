@@ -4,6 +4,7 @@ import java.time.format.DateTimeFormatter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Component;
 
 public class MemberPrinter {
 //	public void print(Member member) {

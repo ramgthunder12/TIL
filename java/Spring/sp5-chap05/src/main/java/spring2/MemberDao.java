@@ -7,7 +7,7 @@ import java.util.Map;
 import org.springframework.stereotype.Component;
 
 @ManualBean
-@Component
+@Component("s2MemberDao")
 public class MemberDao {
 	private static long nextId = 0;
 	
