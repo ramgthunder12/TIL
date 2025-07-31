@@ -7,11 +7,11 @@
 ## 🔗 주요 설명
 
 ### 🆕 `TILDB/`  
-Notion에서 최신으로 작성된 **TIL 콘텐츠**를 변환하여 담은 디렉토리
+Notion에서 최신으로 작성된 **TIL 콘텐츠**를 변환하여 담은 디렉토리<br>
 현재 기준의 최신 기록
 
 ### 🗂 `NotionTIL/`  
-Notion에 작성된 TIL(Time In Learning)을 GitHub로 **백업 저장**한 디렉토리 
+Notion에 작성된 TIL(Time In Learning)을 GitHub로 **백업 저장**한 디렉토리<br> 
 업데이트 기록 보존 및 버전 히스토리 관리용
 
 ### :test_tube: Java 실습 코드
