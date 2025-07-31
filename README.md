@@ -4,6 +4,15 @@
 작지만 궁금한 내용을 정리해 보았습니다.
 
 
+## 🔗 주요 설명
+
+### 🆕 `TILDB/`  
+Notion에서 최신으로 작성된 **TIL 콘텐츠**를 변환하여 담은 디렉토리
+현재 기준의 최신 기록
+
+### 🗂 `NotionTIL/`  
+Notion에 작성된 TIL(Time In Learning)을 GitHub로 **백업 저장**한 디렉토리 
+업데이트 기록 보존 및 버전 히스토리 관리용
 
 ### :test_tube: Java 실습 코드
 
