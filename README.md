@@ -1,20 +1,21 @@
-# TIL
+# TIL  
+Today I Learned  
+**매일 공부한 내용을 기록하는 레포지토리**  
 
-### Notion에서 작성한 개발및 공부 기록
-작지만 궁금한 내용을 정리해 보았습니다.
+- Notion에서 작성한 개발및 공부 기록  
+- 독서 및 실습 프로젝트
 
+---
 
 ## 🔗 주요 설명
 
-### 🆕 `TILDB/`  
-Notion에서 최신으로 작성된 **TIL 콘텐츠**를 변환하여 담은 디렉토리<br>
-현재 기준의 최신 기록
+### :brain: `TILDB/`  
+Notion에서 작성된 **최신 TIL 콘텐츠**를 변환하여 담은 디렉토리
 
-### 🗂 `NotionTIL/`  
-Notion에 작성된 TIL(Time In Learning)을 GitHub로 **백업 저장**한 디렉토리<br> 
-업데이트 기록 보존 및 버전 히스토리 관리용
+### :file_cabinet: `NotionTIL/`  
+Notion의 TIL 콘텐츠가 수정될 때마다 백업되는 **버전 관리용 디렉토리**
 
-### :test_tube: Java 실습 코드
+### :test_tube: `Java/` 실습 코드
 
 - [`java/`](./java) 자바 관련 디렉토리:
   - [`This_is_Java/`](./java/This_is_Java) : 이것이 자바다 도서를 바탕으로 자바 기초 문법 실습
@@ -22,6 +23,7 @@ Notion에 작성된 TIL(Time In Learning)을 GitHub로 **백업 저장**한 디�
   - [`servlet_and_jsp`](./java/servlet_and_jsp) : 처음 해보는 Servlet & JSP 웹 프로그래밍 도서를 바탕으로 실습 및 정리
   - [`Spring`](./java/Spring) : 초보 웹 개발자를 위한 스프링5 프로그래밍 입문 도서를 바탕으로 실습 및 정리
 
+---
 
 ## 📌 TIL 사용 기술
 
