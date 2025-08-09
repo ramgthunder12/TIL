@@ -11,7 +11,9 @@
 
 ## Making: 디자인 패턴 및 자바 개념 실습
 - 직접 궁금한 개념에 직접 코드로 실습
-- [making](./src/makething/copy) : 프록시 패턴, 
+- [making](./src/makething/copy) : 프록시 패턴, 네이글 알고리즘
   - 프록시 실습
     - [MemoMain](./src/makething/copy/MemoMain.java) : 실행 코드
     - [Proxy : TimeOutMemo](./src/makething/copy/TimeOutMemo.java) : 입력 시간 제한 프록시
+  - 네이글 알고리즘
+    - [Main](./src/makething/copy/NagleAlgoritmMain.java) : 실행 코드
