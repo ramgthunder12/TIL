@@ -17,3 +17,4 @@
     - [Proxy : TimeOutMemo](./src/makething/copy/TimeOutMemo.java) : 입력 시간 제한 프록시
   - 네이글 알고리즘
     - [Main](./src/makething/copy/NagleAlgoritmMain.java) : 실행 코드
+    - [NagleAloritmTest](./src/makething/copy/NagleAloritmTest.java) : 네이글 알고리즘의 문제점
