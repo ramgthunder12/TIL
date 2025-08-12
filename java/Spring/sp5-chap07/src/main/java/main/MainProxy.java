@@ -1,4 +1,8 @@
-package chap07;
+package main;
+
+import chap07.ExeTimeCalculator;
+import chap07.ImpeCalculator;
+import chap07.RecCalculator;
 
 public class MainProxy {
 	public static void main(String[] args) {
