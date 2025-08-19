@@ -12,12 +12,11 @@ index.jsp 에서 회원 정보 생성 -> 회원 정보 검색 -> 회원 정보 �
 
 ## 🔗 라우팅 / 엔드포인트
 .do 접미사를 유지한 Front Controller 패턴 기반 라우팅
-<!--
 | 기능    | Method     | Path               | 요청 파라미터(예시)               | 응답             |
 | ----- | ---------- | ------------------ | ------------------------- | -------------- |
-| 회원 생성 | POST       | `/memberInsert.do` | `id, passwd, name, mail`  | 성공 시 목록/상세로 이동 |
-| 회원 조회 | POST | `/memberSearch.do` | `id`                      | 회원 정보 JSP      |
+| 회원 생성 | POST       | `/memberInsert.do` | `id, passwd, name, mail`  | 성공/실패 메시지      |
+| 회원 조회 | POST | `/memberSearch.do` | `id`                      | 회원 정보      |
 | 회원 수정 | POST       | `/memberUpdate.do` | `id, name, mail, passwd?` | 성공/실패 메시지      |
-| 회원 삭제 | POST       | `/memberDelete.do` | `id`                      | 성공 시 목록 이동     |
-| 전체 목록 | GET        | `/memberList.do`   | -                         | 회원 목록 JSP      |
--->
+| 회원 삭제 | POST       | `/memberDelete.do` | `id`                      | 성공/실패 메시지      |
+| 전체 목록 | GET        | `/memberList.do`   | -                         | 회원 목록       |
+
