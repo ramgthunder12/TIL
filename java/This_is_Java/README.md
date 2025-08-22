@@ -15,6 +15,8 @@
   - 프록시 실습
     - [MemoMain](./src/makething/copy/MemoMain.java) : 실행 코드
     - [Proxy : TimeOutMemo](./src/makething/copy/TimeOutMemo.java) : 입력 시간 제한 프록시
+<!--
   - 네이글 알고리즘
     - [Main](./src/makething/copy/NagleAlgorithmMain.java) : 실행 코드
     - [NagleAlorithmTest](./src/makething/copy/NagleAlorithmTest.java) : 네이글 알고리즘의 문제점
+-->
