@@ -37,3 +37,4 @@
 - [ ] Maven → Gradle로 빌드 도구 변경 실험  
 - [ ] `JUnit`을 사용한 단위 테스트 실습 추가  
 - [ ] `JavaEE` 기반 실습을 `Jakarta EE`로 마이그레이션해 보기  
+- [ ] AspectJ 표현식 정리하기
