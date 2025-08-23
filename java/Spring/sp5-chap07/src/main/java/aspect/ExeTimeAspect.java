@@ -10,7 +10,7 @@ import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect //공통기능 정의 어노테이션
 public class ExeTimeAspect {
-	@Pointcut("execution(public*chap07..*(..))") //공통기능을 적용할 대상, 공통기능을 적용할 조건
+	@Pointcut("execution(public * chap07..*(..))") //공통기능을 적용할 대상, 공통기능을 적용할 조건, AspectJ 표현식 공백 주의
 	private void publicTarget() {
 	}
 	
