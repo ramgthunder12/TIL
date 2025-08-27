@@ -9,7 +9,8 @@ import chap07.Calculator;
 import chap07.RecCalculator;
 
 @Configuration
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy(proxyTargetClass = true)
+//@Enable ... : "..." 관련 기능을 적용하는데 필요한 다양한 스프링 설정 대신 처리 
 public class AppCtx {
 	@Bean
 	public ExeTimeAspect exeTimeAspect() {
