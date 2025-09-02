@@ -37,6 +37,21 @@ public class ExeTimeAspect {
 			long finish = System.nanoTime();
 			Signature sig = joinPoint.getSignature();
 			System.out.printf("%s.%s(%s) 실행시간 : %d ns\n", joinPoint.getTarget().getClass().getSimpleName(), sig.getName(), Arrays.toString(joinPoint.getArgs()), (finish -start));
+			Object target = joinPoint.getTarget();
+			Object[] targetArgs = joinPoint.getArgs();
+			
+			String name = sig.getName();
+			String allMethod = sig.toLongString();
+			String methodName = sig.toShortString();
+			
+			System.out.println(
+				    "getSignature() : 메소드 시그니처를 구한다." + sig +
+				    "\ngetTarget() : 대상 객체를 구한다." + target +
+				    "\ngetArgs() : 파라미터 목록을 구한다." + targetArgs +
+				    "\n\ngetName() : 호출되는 메소드 이름" + name +
+				    "\ntoLongString() : 호출되는 메소드 완전형 문장(반환타입, 메소드 시그니처, 파라미터 타입)" + allMethod +
+				    "\ntoShortString() : 호출되는 메소드 축약형 문장" + methodName
+				);
 		}
 	}
 }
