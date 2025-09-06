@@ -23,6 +23,8 @@ Notion의 TIL 콘텐츠가 수정될 때마다 백업되는 **버전 관리용 �
   - [`servlet_and_jsp`](./java/servlet_and_jsp) : 처음 해보는 Servlet & JSP 웹 프로그래밍 도서를 바탕으로 실습 및 정리
   - [`Spring`](./java/Spring) : 초보 웹 개발자를 위한 스프링5 프로그래밍 입문 도서를 바탕으로 실습 및 정리
 
+### 🧪 `notion-sync/`  
+로컬 환경에서 Notion API 연동을 테스트하기 위한 코드
 ---
 
 ## 📌 TIL 사용 기술
