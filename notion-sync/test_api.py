@@ -116,6 +116,34 @@ def blocks_to_markdown(blocks_json, indent=0):
             text = "".join([rt.get("plain_text", "") for rt in data.get("rich_text", [])])
             md_lines.append(f"{indent_str}```{lang}\n{text}\n```")
 
+        # Toggle
+        elif btype == "toggle":
+            text = rich_text_to_markdown(data.get("rich_text", []))
+            md_lines.append(f"{indent_str}<details>\n{indent_str}<summary>{text}</summary>\n")
+            if block.get("has_children"):
+                children = get_block_children(block["id"])
+                md_lines.append(blocks_to_markdown(children, indent + 1))
+            md_lines.append(f"{indent_str}</details>\n")
+
+        # Table
+        elif btype == "table":
+            # 테이블 블록은 children 안에 table_row 블록들이 있음
+            rows = get_block_children(block["id"])
+            table_lines = []
+            for i, row in enumerate(rows.get("results", [])):
+                if row["type"] == "table_row":
+                    cells = row["table_row"]["cells"]
+                    row_texts = []
+                    for cell in cells:
+                        cell_text = rich_text_to_markdown(cell)
+                        row_texts.append(cell_text)
+                    line = "| " + " | ".join(row_texts) + " |"
+                    table_lines.append(line)
+                    # 헤더 구분선 추가 (첫 번째 줄 뒤)
+                    if i == 0:
+                        table_lines.append("|" + "|".join([" --- "]*len(cells)) + "|")
+            md_lines.extend(table_lines)
+
     return "\n".join(md_lines)
 
 # ---------------------------
@@ -134,7 +162,7 @@ if __name__ == "__main__":
     markdown_text = blocks_to_markdown(blocks)
 
     # 저장
-    with open("notion_page.md", "w", encoding="utf-8") as f:
+    with open("notion_page_test3.md", "w", encoding="utf-8") as f:
         f.write(markdown_text)
 
-    print("✅ 변환 완료! notion_page.md 파일 확인하세요.")
+    print("✅ 변환 완료! notion_page_test3.md 파일 확인하세요.")
