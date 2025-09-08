@@ -27,11 +27,27 @@ def get_database_pages(database_id):
     return res.json()
 
 def get_block_children(block_id):
-    """블록(children) 가져오기"""
-    url = f"https://api.notion.com/v1/blocks/{block_id}/children?page_size=100"
-    res = requests.get(url, headers=headers)
-    res.raise_for_status()
-    return res.json()
+    """해당 블록(children) 모두 가져오기 (pagination 지원)"""
+    url = f"https://api.notion.com/v1/blocks/{block_id}/children"
+    all_results = []
+    next_cursor = None
+
+    while True:
+        params = {"page_size": 100}
+        if next_cursor:
+            params["start_cursor"] = next_cursor
+
+        res = requests.get(url, headers=headers, params=params)
+        res.raise_for_status()
+        data = res.json()
+
+        all_results.extend(data.get("results", []))
+
+        if not data.get("has_more"):
+            break
+        next_cursor = data.get("next_cursor")
+
+    return {"object": "list", "results": all_results}
 
 # ---------------------------
 # Markdown 변환 함수
