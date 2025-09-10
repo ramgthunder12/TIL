@@ -11,7 +11,7 @@ from email.mime.multipart import MIMEMultipart
 # 환경 변수 로드
 # ---------------------------
 load_dotenv()
-NOTION_TOKEN = os.getenv("NOTION_TOKEN")
+NOTION_API_KEY = os.getenv("NOTION_API_KEY")
 DATABASE_ID = os.getenv("DATABASE_ID")
 
 SENDER_EMAIL = os.getenv("SENDER_EMAIL")
@@ -23,7 +23,7 @@ OUTPUT_DIR = os.getenv("OUTPUT_DIR", ".")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 headers = {
-    "Authorization": f"Bearer {NOTION_TOKEN}",
+    "Authorization": f"Bearer {NOTION_API_KEY}",
     "Content-Type": "application/json",
     "Notion-Version": "2022-06-28"
 }
