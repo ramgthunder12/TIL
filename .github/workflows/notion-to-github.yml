@@ -3,8 +3,8 @@ name: Notion to GitHub Commit
 on:
   workflow_dispatch:
   schedule:
-    # 하루에 1번 실행: 8AM (UTC 기준)
-    - cron: '0 8 * * *'
+    # 하루에 1번 실행: KST 8AM (UTC 기준 23시)
+    - cron: '0 23 * * *'
 
 jobs:
   update-github:
