@@ -17,9 +17,8 @@ Notion에서 작성된 **최신 TIL 콘텐츠**를 변환하여 담은 디렉토
 Notion의 TIL 콘텐츠가 수정될 때마다 백업되는 **버전 관리용 디렉토리**
 
 
-### :test_tube: `notion-sync/`  
+### :test_tube: [`notion-sync/`](./notion-sync)  
 로컬 환경에서 Notino API 연동을 테스트하기 위한 **테스트 디렉토리**
-[`notion-sync/`](./notion-sync)
 
 
 ### :test_tube: `Java/` 실습 코드
