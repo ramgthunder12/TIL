@@ -154,6 +154,7 @@ def blocks_to_markdown(blocks_json, indent=0):
     for block in blocks_json.get("results", []):
         btype, data = block["type"], block[block["type"]]
 
+        # 기본 블록 처리
         if btype == "heading_1":
             md_lines.append(f"{indent_str}# {rich_text_to_markdown(data.get('rich_text', []))}\n")
         elif btype == "heading_2":
@@ -167,19 +168,16 @@ def blocks_to_markdown(blocks_json, indent=0):
         elif btype == "bulleted_list_item":
             text = rich_text_to_markdown(data.get("rich_text", []))
             md_lines.append(f"{indent_str}- {text}")
-            if block.get("has_children"):
-                md_lines.append(blocks_to_markdown(get_block_children(block["id"]), indent + 1))
         elif btype == "numbered_list_item":
             text = rich_text_to_markdown(data.get("rich_text", []))
             md_lines.append(f"{indent_str}1. {text}")
-            if block.get("has_children"):
-                md_lines.append(blocks_to_markdown(get_block_children(block["id"]), indent + 1))
         elif btype == "to_do":
             checked = "x" if data.get("checked") else " "
             text = rich_text_to_markdown(data.get("rich_text", []))
             md_lines.append(f"{indent_str}- [{checked}] {text}")
         elif btype == "quote":
-            md_lines.append(f"{indent_str}> {rich_text_to_markdown(data.get('rich_text', []))}")
+            text = rich_text_to_markdown(data.get("rich_text", []))
+            md_lines.append(f"{indent_str}> {text}")
         elif btype == "code":
             lang = data.get("language", "")
             text = "".join([rt.get("plain_text", "") for rt in data.get("rich_text", [])])
@@ -187,9 +185,15 @@ def blocks_to_markdown(blocks_json, indent=0):
         elif btype == "toggle":
             text = rich_text_to_markdown(data.get("rich_text", []))
             md_lines.append(f"{indent_str}<details>\n{indent_str}<summary>{text}</summary>\n")
+            # 토글 안 children은 반드시 재귀 실행 후 닫기 태그
             if block.get("has_children"):
                 md_lines.append(blocks_to_markdown(get_block_children(block["id"]), indent + 1))
             md_lines.append(f"{indent_str}</details>\n")
+            continue  # 아래 공통 처리에서 또 실행되지 않도록 건너뜀
+
+        # ✅ 공통 children 처리 (모든 블록에 적용)
+        if block.get("has_children") and btype != "toggle":
+            md_lines.append(blocks_to_markdown(get_block_children(block["id"]), indent + 1))
 
     return "\n".join(md_lines)
 
