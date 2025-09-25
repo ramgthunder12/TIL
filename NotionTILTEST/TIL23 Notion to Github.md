@@ -364,6 +364,16 @@ def hello():
             1. 완성된 예시 사진
         1. 사용방법 큰 흐름 설명
             1. github 코드 가져오기 → Notion 설정 → github 설정
+            1. 구조
+                1. 
+                .
+├─ notion-sync/
+│  ├─ notion_to_md.py    #실행 스크립트
+│  └─ .env                            #OUTPUT_DIR 설정 파일
+└─ .github/
+    └─ workflows/
+        └─ notion-sync.yml    #Actions 실행 파일
+
         1. 자세한 사용법
             1. 설정법
                 1. github 코드 가져오기
@@ -532,10 +542,12 @@ def hello():
                     1. 수동 실행 방법
         1. 지원환경
             1. Notion 버전
+                1. 2022-06-28
             1. Github 버전
             1. Github Actions에서 사용하고 있는 리눅스 버전
+                1. 기본 제공 최신 버전
         1. 문제 해결
-            1. 구글 메일 접근 허용
+            1. 구글 메일 접근 허용 방법
             1. 네이버 매일을 사용하려면 따로 네이버 메일에서 설정 해줘야 함, Gmail 추천
             1. Github Actions 시간대가 UTC 기준이여서 한국 시간을 알고 싶다면, UTC 시간 +9를 하면 한국 시간
             1. GH_TOKEN 없으면 푸시(github에 내용 올리기) 불가
@@ -549,6 +561,9 @@ def hello():
 
                 </details>
 
+            1. Notion API 호출 한도
+            1. Github Actions 호출 한도
+            1. Github 리포지토리 저장 공간 한도
         1. 로드맵
             1. 기능
                 1. 블록 중 코드 내부 텍스트 변환하기
