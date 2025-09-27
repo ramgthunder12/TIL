@@ -19,6 +19,13 @@ Notion의 TIL 콘텐츠가 수정될 때마다 백업되는 **버전 관리용 �
 
 ### :test_tube: [`notion-sync/`](./notion-sync)  
 로컬 환경에서 Notino API 연동을 테스트하기 위한 **테스트 디렉토리**
+- Notion -> Markdown 변환 스크립트:
+  - [`notion-sync/notion_to_md.py`](./notion-sync/notion-sync/notion_to_md.py) : Notion Database의 페이지/블록을 가져와 Markdown 파일로 변환하고 저장. 충돌 해결 및 메일 알림 기능 포함.
+👉 [Notion to GitHub 사용 방법 보러가기](https://github.com/ramgthunder12/notion-to-github)
+
+### ⚙️ [`.github/workflows`](./.github/workflows)
+Github Actions 워크플로우
+- [`/notion-to-github.yml`](./.github/workflows/notion-to-github.yml) : 스캐줄러를 통해 Notion DB → Markdown 변환 결과를 저장소에 자동 반영
 
 
 ### :technologist: [`java/`](./java) 실습 코드
