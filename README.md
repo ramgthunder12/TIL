@@ -35,8 +35,7 @@ Github Actions 워크플로우
 
 
 ### :technologist: [`java/`](./java) 실습 코드
-
-- 자바 관련 디렉토리:
+자바 관련 디렉토리
   - [`This_is_Java/`](./java/This_is_Java) : 이것이 자바다 도서를 바탕으로 자바 기초 문법 실습과 디자인패턴 및 개념을 자바로 구현 
   - [`dev_skill_interview_note/`](./java/dev_skill_interview_note) : 개발자 기술 면접 노트를 바탕으로 자바 알고리즘 문제 연습
   - [`servlet_and_jsp`](./java/servlet_and_jsp) : 처음 해보는 Servlet & JSP 웹 프로그래밍 도서를 바탕으로 실습 및 정리
