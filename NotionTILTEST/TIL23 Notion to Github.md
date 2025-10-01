@@ -3,6 +3,8 @@
 **왜 해?**
 
 - [ ] 더 많은 정보를 정리 하기 위해 코드 분석하기
+- [ ] 사용설명서 작성하기
+- [ ] 추가 기능 정리하기
 # Action : 
 
 **뭘 했어?**
@@ -377,12 +379,123 @@ def hello():
         1. 자세한 사용법
             1. 설정법
                 1. github 코드 가져오기
-                    1. 클론 방법
+                    ~~클론 방법~~
+
+                    1. 포크 방법
+                        1. fork 버튼 누르기 create new fork
+                            <details>
+                            <summary>버튼 위치</summary>
+
+
+                            </details>
+
+                        1. 계정 선택하기
+                            <details>
+                            <summary>이미지</summary>
+
+                                <details>
+                                <summary>화면 설명</summary>
+
+                                    - **Owner ***
+                                        → 이 Fork된 저장소를 소유할 계정을 선택하는 곳이야.
+
+                                        네 GitHub 계정(예: `your-username`)을 선택하면 돼.
+
+                                    - **Repository name ***
+                                        → 새로 생길 레포지토리 이름.
+
+                                        기본값은 원본과 같은 `notion-to-github`이고, 원하면 다른 이름으로 바꿀 수 있어.
+
+                                    - **Description**
+                                        → 새 레포지토리의 설명. 지금은
+
+                                        ```plain text
+Notion Database 페이지를 GitHub에 Markdown 형식으로 자동 백업하는 도구
+
+
+```
+                                        라고 입력되어 있네. 원본과 달리 네 계정에만 표시되는 설명이라 자유롭게 수정 가능해.
+
+                                    - **Copy the main branch only**
+                                        → 체크하면 `main` 브랜치만 가져오고, 다른 브랜치는 제외돼. (보통 체크된 상태로 두면 됨)
+
+                                    - **Create fork 버튼**
+                                        → 클릭하면 원본 레포지토리의 **복사본**이 네 GitHub 계정에 생성돼.
+
+                                        이후 그 레포지토리를 네 로컬에 `git clone` 해서 작업하면 됨.
+
+                                </details>
+
+                            </details>
+
+                        1. Create fork 클릭
                 1. Notion 설정
                     1. 데이터베이스 생성
-                    1. 페이지 생성
+                        1. Notion회원 가입하기
+                        1. “/데이터베이스” 입력하면 데이터베이스 전체 페이지  클릭
+                            <details>
+                            <summary>이미지</summary>
+
+
+                            </details>
+
+                        1. 생성
+                        1. 데이터베이스 이름 작성 및 테스트 페이지 작성
+
+                    1. Database ID 가져오기
+                        1. 설정클릭
+                        1. 스크롤 내려서 맨 아래쪽 데이터 소스 관리 클릭
+                        1. 해당 데이터베이스의 … 클릭
+                        1. 데이터 소스 ID 복사(Database ID)
+                            <details>
+                            <summary>방법 이미지</summary>
+
+
+                            </details>
+
                     1. NotionAPI 생성
-                    1. Github 연결
+                        1. URL 방법
+                            1. 해당 URL에서 notion로그인
+
+                            1. 새 API 통합 클릭
+
+                            1. 새 API 통합 작성
+                                1. 작성 목록
+                                    API 통합 이름 : to-github
+
+                                    (notion이라는 이름 들어가면 안됨)
+
+                                    관련워크스페이스 : 내가 사용할 데이터베이스의 워크스페이스(위치)
+
+                                    유형 : private
+
+                                    로고 : 없어도됨
+
+                                <details>
+                                <summary>이미지</summary>
+
+
+                                </details>
+
+                            1. 저장
+                            1. API key 복사
+                                1. 표시하기 클릭→ 복사 클릭
+                            <details>
+                            <summary>이미지</summary>
+
+
+                            </details>
+
+                        1. 설정 방법
+                    1. Github 연결 (DB 공유)
+                        1. 사용할 DB 맨 오른쪽 위 … 클릭
+
+                        1. 연결 클릭
+
+                        1. to Github 검색 후 클릭
+
+                        1. 확인
+
                 1. github 설정
                     1. github Actions 설정
                     1. github secrit variables 설정
@@ -591,6 +704,58 @@ GitHub Actions를 이용해 매일 정해진 시간에 자동 실행되며, 수�
             이 프로젝트는 Notion에 작성한 글을 GitHub에도 다시 작성해야 하는 이중 작업 때문에 발생하는 시간과 비용 낭비 문제를 해결하기 위해 만들어졌습니다.
 
         ## ✨ 기능
+
+        ### 페이지 자동 백업
+
+        Notion 데이터베이스에 작성된 모든 페이지를 Markdown 파일로 변환해 GitHub 저장소에 자동 저장합니다.
+
+        ### 파일명 정리
+
+        페이지 제목을 파일명으로 사용하며, `\\ / * ? : " < > |` 같은 특수문자를 제거하고 저장됩니다.
+
+        ### 자동 업데이트
+
+        Notion 내용이 수정되면 GitHub 저장소도 자동으로 갱신되어 항상 최신 상태를 유지합니다.
+
+        ### 에러 알림
+
+        동기화 과정에서 오류가 발생하면 등록된 이메일로 알림을 받아 문제를 바로 확인할 수 있습니다.
+
+        ### 텍스트 스타일 지원
+
+        볼드체, 이탤릭체, 코드, 취소선, 밑줄 등 Notion에서 작성한 다양한 서식이 그대로 반영됩니다.
+
+        ### 블록 요소 지원
+
+        제목(Heading), 문단, 체크박스, 인용구, 코드 블록, 토글, 리스트 등 다양한 블록 형식이 Markdown으로 변환됩니다.
+
+        ### 자동 실행
+
+        매일 한국 시간 기준 오전 8시에 자동으로 백업이 실행됩니다.
+
+        ### 수동 실행
+
+        필요할 때는 GitHub Actions에서 직접 실행해 즉시 백업을 진행할 수 있습니다.
+
+        ## 📖 사용방법
+
+        ### ⏩ 큰흐름
+
+        1. GitHub 코드 가져오기 → 레포지토리를 클론
+        1. Notion 설정 → 데이터베이스 및 API 토큰 준비
+        1. GitHub 설정 → GitHub Actions 및 Secrets 설정
+        ### 📂 디렉토리 구조
+
+        ```plain text
+.
+├── notion-sync/                  # Notion → GitHub 변환 관련 디렉토리
+│   ├── notion_to_md.py           # 실행 스크립트 (Notion 페이지를 Markdown으로 변환)
+│   └── .env                      # 로컬 전용 환경변수 파일 (OUTPUT_DIR 설정)
+└── .github/
+    └── workflows/                # GitHub Actions 워크플로 디렉토리
+        └── notion-sync.yml       # Notion Sync 자동 실행 설정 파일
+```
+        ### ⏩ 세부 방법
 
     </details>
 
