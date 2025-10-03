@@ -711,8 +711,7 @@ GitHub Actions를 이용해 매일 정해진 시간에 자동 실행되며, 수�
         - 설명
 이 프로젝트는 Notion Database → GitHub Markdown 자동 백업 도구입니다.
         - 만든 계기
-            이 프로젝트는 Notion에 작성한 글을 GitHub에도 다시 작성해야 하는 이중 작업 때문에 발생하는 시간과 비용 낭비 문제를 해결하기 위해 만들어졌습니다.
-
+이 프로젝트는 Notion에 작성한 글을 GitHub에도 다시 작성해야 하는 이중 작업 때문에 발생하는 시간과 비용 낭비 문제를 해결하기 위해 만들어졌습니다.
         ## ✨ 기능
 
         ### 페이지 자동 백업
@@ -764,8 +763,155 @@ GitHub Actions를 이용해 매일 정해진 시간에 자동 실행되며, 수�
 └── .github/
     └── workflows/                # GitHub Actions 워크플로 디렉토리
         └── notion-sync.yml       # Notion Sync 자동 실행 설정 파일
+
 ```
-        ### ⏩ 세부 방법
+        ### 🔍 자세한 설정법
+
+        <details>
+<summary>1. 🐙 GitHub 코드 가져오기 (Fork)</summary>
+
+        1. Fork 버튼 클릭 (Create new fork)
+Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
+        1. 계정 선택하기
+            - Owner : 소유할 계정을 선택
+        1. Create fork 클릭
+</details>
+        <details>
+<summary>2-1. 🗂 Notion 설정</summary>
+
+        ### (1) 데이터베이스 생성
+
+        1. Notion 회원 가입하기
+        1. `/``데이터베이스` 입력 → 데이터베이스 전체 페이지 선택
+        1. 생성 완료
+        1. 데이터베이스 이름 작성 및 테스트 페이지 작성
+        ### (2) Database ID 가져오기
+
+        <details>
+        <summary>잘못된 방법</summary>
+
+            1. 설정 클릭(새로 만들기 옆 에 위치한 버튼)
+            1. 데이터 소스 관리 클릭
+            1. 해당 데이터베이스의 `…` 클릭
+            1. 데이터 소스 ID 복사(Database ID)
+메모장에 붙여넣어 잠시 보관해 두기
+        </details>
+
+        1. 데이터베이스에 가서 창닫기 버튼 옆 공유 클릭
+        1. 링크 복사 클릭
+        1. https://www.notion.so/**DATABASE_ID**?v=~~~~
+        1. DATABASE_ID 부분의 텍스트 복사 후 Secret에 붙여 넣기
+        </details>
+
+        ### (3) Notion API 생성
+
+        1. Notion Integration 페이지 접속 후 로그인
+        1. 새 API 통합 클릭
+        1. 새 API 통합 작성
+            - API 통합 이름 : `to-github`
+(⚠️ `notion` 이라는 단어는 포함 불가)
+            - 관련 워크스페이스 : 데이터베이스가 있는 워크스페이스
+            - 유형: `private`
+        1. “API 통합이 생성되었습니다.” API 통합 설정 구성 클릭
+        1. 저장 후 API Key 복사
+            - “표시하기” 클릭 → “복사” 클릭
+        ### (4) GitHub 연결 (DB 공유
+
+        1. 사용할 DB 맨 오른쪽 위 `…` 클릭(공유 ☆ ...)
+        1. 연결 클릭
+        1. 방금 만든 API 통합(`to-github`) 검색 후 클릭
+        1. 연결 확인
+        <details>
+<summary>3. 🐙 GitHub 설정</summary>
+
+        ### (1) GitHub Secret Variables 설정
+
+        1. Notion to GitHub 코드를 Fork한 레포지토리에서 상단 탭의 Settings 클릭
+<details>
+<summary>용어 설명</summary>
+        - 클론(Clone) : 프로젝트 전체를 내 로컬 저장소(내 컴퓨터)에 복사
+        - 포크(Fork) : 프로젝트 전체를 내 원격 저장소(GitHub 계정)에 복사
+        - 레포지토리(Repository) : GitHub 저장소
+        - 탭(Tab) : GitHub 상단의 메뉴 항목
+</details>
+        1. 좌측 메뉴에서 Security → Secrets and variables → Actions 클릭
+        1. New repository secret 버튼 클릭
+        1. Name과 Secret 입력
+            - Name : 작성 해야 할 이름 (환경 변수명)(반드시 일치해야 함 → 오타 주의)
+            - Secret : 복사 붙여 넣기 할 실제 값 (작성 후 다시 확인 불가 → 복사 저장 권장)
+                <details>
+<summary>🔑 필수로 만들어야할 Secret 변수 목록</summary>
+
+                1. name : NOTION_API_KEY
+                    secret : Notion에서 발급받은 API 키
+
+                    [NOTION_API_KEY 발급방법](####(3) Notion API 생성)
+
+                1. name : DATABASE_ID
+                    secret : Notion 데이터베이스 고유 번호
+
+                    [DATABASE_ID 가져오는 방법](####(2) Database ID 가져오기)
+
+                1. name : SENDER_EMAIL
+                    secret : 송신 이메일 주소 (예: ramgthunder12@gmail.com)
+
+                1. name : EMAIL_PASSWORD
+                    secret : 송신 이메일 계정 비밀번호 (예: NotionToGithub9080$)
+
+                1. name : RECIVER_EMAIL
+                    secret : 오류 알림을 받을 수신 이메일 주소 (예: ramgthunder12@gmail.com)
+
+                1. name : GH_TOKEN
+                    secret : GitHub에서 push/commit 권한을 가진 Personal Access Token
+
+                <details>
+<summary>GitHub Personal Access Token 발급 방법</summary>
+
+                1. 프로필 아이콘 → Settings
+                1. 좌측 하단 Developer settings
+                1. Personal Access Tokens → Tokens (classic)
+                1. Generate new token (classic) 클릭
+                1. Note에 GH_TOKEN 입력
+                1. 권한 체크
+                    - workflow (GitHub Actions)
+                    - write:packages (GitHub Package)
+                    - admin:repo_hook
+                    - delete_repo
+                1. Generate token 클릭
+                1. 복사 후 메모장에 저장
+</details>
+</details>
+        1. Add secret 버튼 클릭
+        ### (2) .env 설정
+
+        - 파일 위치 : 프로젝트 루트
+        - 설정 방법 : `.env` 파일에서 TILDB 글씨를 지우고 원하는 파일명 작성
+        - 필수 값
+            - OUTPUT_DIR : Notion 페이지를 저장할 폴더명 (Notion 데이터베이스 이름과 동일하게 설정 권장)
+        ### (3) 추가 설정
+
+        <details>
+<summary>⏰ 시간 설정</summary>
+
+        - 파일 위치 : `.github/workflows/``workflow_dispatch``.yml`
+        - 설정 방법 : 7번 줄의 23을 원하는 시간으로 변경
+            - GitHub Actions는 UTC 기준으로 동작
+            - 예: 23시 (UTC) = 한국 시간 오전 8시
+            - 원하는 한국 시간 -9시간 값으로 설정
+</details>
+</details>
+    </details>
+
+    <details>
+    <summary>1차 사용 테스트</summary>
+
+        총 52분
+
+        그래서 어떻게 됬는지 설명해주기
+
+        수동 설정으로 테스트 하는 방법 추가하기
+
+        아직 안해봐서 후기를 못한다
 
     </details>
 
