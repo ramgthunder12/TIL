@@ -800,26 +800,46 @@ Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
         1. 데이터베이스에 가서 창닫기 버튼 옆 공유 클릭
         1. 링크 복사 클릭
         1. https://www.notion.so/**DATABASE_ID**?v=~~~~
-        1. DATABASE_ID 부분의 텍스트 복사 후 Secret에 붙여 넣기
+        1. DATABASE_ID 부분의 텍스트 복사 후 메모장에 잠시 보관해 두기
+            - 메모장에 “DATABASE_ID : (여기에 붙여 넣기)” 정리 해두기
+            - [GitHub Secret Variables 설정 시 필요함](#### (1) GitHub Secret Variables 설정)
         </details>
 
         ### (3) Notion API 생성
 
-        1. Notion Integration 페이지 접속 후 로그인
+        <details>
+        <summary>API 생성 페이지 까지 링크를 통해서 가는 방식</summary>
+
+            1. Notion Integration 페이지 접속 후 로그인
+        </details>
+
+        <details>
+        <summary>API 생성 페이지 까지 클릭해서 가는 방식</summary>
+
+            1-1. 창닫기 버튼 아래 … 버튼 클릭
+
+            1-2. 연결 클릭
+
+            1-3. API 통합개발 클릭
+
+        </details>
+
         1. 새 API 통합 클릭
         1. 새 API 통합 작성
-            - API 통합 이름 : `to-github`
+            - API 통합 이름 : `to-github`(추천)
 (⚠️ `notion` 이라는 단어는 포함 불가)
             - 관련 워크스페이스 : 데이터베이스가 있는 워크스페이스
             - 유형: `private`
         1. “API 통합이 생성되었습니다.” API 통합 설정 구성 클릭
         1. 저장 후 API Key 복사
             - “표시하기” 클릭 → “복사” 클릭
+            - 메모장에 “NOTION_API_KEY : (여기에 붙여 넣기)” 정리 해두기
+            - [GitHub Secret Variables 설정 시 필요함](#### (1) GitHub Secret Variables 설정)
         ### (4) GitHub 연결 (DB 공유
 
-        1. 사용할 DB 맨 오른쪽 위 `…` 클릭(공유 ☆ ...)
+        1. 사용할 데이터베이스에서 창닫기 버튼 아래 `…` 클릭
         1. 연결 클릭
-        1. 방금 만든 API 통합(`to-github`) 검색 후 클릭
+        1. [내가 만든 Notion API 이름(`to-github` 추천)](#### (3) Notion API 생성) 검색 후 클릭
         1. 연결 확인
         <details>
 <summary>3. 🐙 GitHub 설정</summary>
@@ -834,7 +854,7 @@ Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
         - 레포지토리(Repository) : GitHub 저장소
         - 탭(Tab) : GitHub 상단의 메뉴 항목
 </details>
-        1. 좌측 메뉴에서 Security → Secrets and variables → Actions 클릭
+        1. 좌측 메뉴에서 목차에 Security → Secrets and variables → Actions 클릭
         1. New repository secret 버튼 클릭
         1. Name과 Secret 입력
             - Name : 작성 해야 할 이름 (환경 변수명)(반드시 일치해야 함 → 오타 주의)
@@ -845,12 +865,12 @@ Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
                 1. name : NOTION_API_KEY
                     secret : Notion에서 발급받은 API 키
 
-                    [NOTION_API_KEY 발급방법](####(3) Notion API 생성)
+                    [NOTION_API_KEY 발급방법](#### (3) Notion API 생성)
 
                 1. name : DATABASE_ID
                     secret : Notion 데이터베이스 고유 번호
 
-                    [DATABASE_ID 가져오는 방법](####(2) Database ID 가져오기)
+                    [DATABASE_ID 가져오는 방법](#### (2) Database ID 가져오기)
 
                 1. name : SENDER_EMAIL
                     secret : 송신 이메일 주소 (예: ramgthunder12@gmail.com)
@@ -864,28 +884,30 @@ Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
                 1. name : GH_TOKEN
                     secret : GitHub에서 push/commit 권한을 가진 Personal Access Token
 
-                <details>
+                6개 다 만들었는지 꼭 확인!
+
+                    <details>
 <summary>GitHub Personal Access Token 발급 방법</summary>
 
-                1. 프로필 아이콘 → Settings
-                1. 좌측 하단 Developer settings
-                1. Personal Access Tokens → Tokens (classic)
-                1. Generate new token (classic) 클릭
-                1. Note에 GH_TOKEN 입력
-                1. 권한 체크
-                    - workflow (GitHub Actions)
-                    - write:packages (GitHub Package)
-                    - admin:repo_hook
-                    - delete_repo
-                1. Generate token 클릭
-                1. 복사 후 메모장에 저장
+                    1. 프로필 아이콘 → Settings
+                    1. 좌측 하단 Developer settings
+                    1. Personal Access Tokens → Tokens (classic)
+                    1. Generate new token (classic) 클릭
+                    1. Note에 GH_TOKEN 입력
+                    1. 권한 체크
+                        - workflow (GitHub Actions)
+                        - write:packages (GitHub Package)
+                        - admin:repo_hook
+                        - delete_repo
+                    1. Generate token 클릭
+                    1. 복사 후 메모장에 저장
 </details>
 </details>
         1. Add secret 버튼 클릭
         ### (2) .env 설정
 
-        - 파일 위치 : 프로젝트 루트
-        - 설정 방법 : `.env` 파일에서 TILDB 글씨를 지우고 원하는 파일명 작성
+        - 파일 위치 : [./notion-syn/.env](./notion-sync/.env)  
+        - 설정 방법 : (파일 위치 클릭)`.env` 파일에서 ./NotionTIL 글씨 중 NotionTIL만 지우고 원하는 파일명 작성(노션의 데이터베이스 페이지들이 들어갈 파일명)
         - 필수 값
             - OUTPUT_DIR : Notion 페이지를 저장할 폴더명 (Notion 데이터베이스 이름과 동일하게 설정 권장)
         ### (3) 추가 설정
