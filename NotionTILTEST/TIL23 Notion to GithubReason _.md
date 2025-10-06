@@ -921,7 +921,17 @@ Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
             - 예: 23시 (UTC) = 한국 시간 오전 8시
             - 원하는 한국 시간 -9시간 값으로 설정
 </details>
-</details>
+        <details>
+<summary>🕹️ 수동 시작</summary>
+
+            1. 포크한 레파지토리에서 탭에 위치한 Actions클릭
+            1. 왼쪽에 Notion to GitHub Commit 클릭
+            1. Run workflow 클릭
+            1. 초록색 Run workflow 클릭
+        </details>
+
+        </details>
+
     </details>
 
     <details>
