@@ -887,7 +887,7 @@ Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
                 6개 다 만들었는지 꼭 확인!
 
                     <details>
-<summary>GitHub Personal Access Token 발급 방법</summary>
+<summary>ㅊ</summary>
 
                     1. 프로필 아이콘 → Settings
                     1. 좌측 하단 Developer settings
