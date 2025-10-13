@@ -939,25 +939,22 @@ Notion-to-Github 레파지토리 상단에 fork 버튼 누르기
 
         총 52분
 
-        그래서 어떻게 됬는지 설명해주기
-
-        수동 설정으로 테스트 하는 방법 추가하기
-
-        아직 안해봐서 후기를 못한다
-
+        - [x] 그래서 어떻게 됬는지 설명해주기
+        - [x] 수동 설정으로 테스트 하는 방법 추가하기
+        - [x] 아직 안해봐서 후기를 못한다
     </details>
 
-    - [ ] .env 설정(데이터 베이스 이름 설정)
-    - [ ] secrit variavles 설정
-    - [ ] Github token 설정
-    - [ ] github actions 설정
-    - [ ] clone 방법
-    - [ ] NotionAPI 설정
-    - [ ] 시간 설정
+    - [x] .env 설정(데이터 베이스 이름 설정)
+    - [x] secrit variavles 설정
+    - [x] Github token 설정
+    - [x] github actions 설정
+    - [x] fork 방법
+    - [x] NotionAPI 설정
+    - [x] 시간 설정
     - [ ] 추가 기능 사항
     - [ ] 애러 사항 문의
     - [ ] 지원 환경
-- [ ] 다른 사람도 사용할 수 있도록 정리 하기
+- [x] 다른 사람도 사용할 수 있도록 정리 하기
 - [ ] rich_text 색상 속성 추가 고민 하기
 - [ ] 블록 속성 추가하기
     - [x] 토글 추가 하기
