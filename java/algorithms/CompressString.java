@@ -1,6 +1,6 @@
 public class CompressString {
     public static void main(String[] args) {
-        String str = "aabccc";
+        String str = "aaaaaaaaaaabccc";
         String compressedStr = compressString(str);
         String decompressedStr = decompressString(compressedStr);
         System.out.println("압축 전 문자열: " + str);
