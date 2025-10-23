@@ -8,7 +8,8 @@ public class GiftSum {
         Set<Integer> seen = new HashSet<>();
         for(int i = 0; i < n; i++) {
             for(int x : seen) {
-                if(seen.contains(W - gift[i] - x)) {
+                System.out.println("gitft[%d] : %d, x : %d".formatted(i, gift[i], x));
+                if(seen.contains(W - gift[i] - x)) {//contians(Object o) : o.equals()로 비교함
                     return true;
                 }
             }
