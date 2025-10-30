@@ -25,76 +25,34 @@ public class QWERScanner {
 
     public static String[] domainScanner(int TC, int[][] QWER) {
         String[] answer = new String[TC];
-        int optionChunk1_1 = 0;
-        int optionChunk1_2 = 0;
-        int optionChunk2_1 = 0;
-        int optionChunk2_2 = 0;
-
-        int result = 0;
-
+        
         for(int i = 0; i < TC; i++) {
             StringBuilder domain = new StringBuilder();
-            for(int j = 64; j < 192; j = j + 16) {
-                    optionChunk1_1 = QWER[i][j];
-                    optionChunk1_2 = QWER[i][j + 1];
 
-                    optionChunk2_1 = QWER[i][j + 2];
-                    optionChunk2_2 = QWER[i][j + 3];
+            for(int j = 64; j < 192; j += 16) {
+                int[][] opt = {{QWER[i][j], QWER[i][j + 1]}, {QWER[i][j + 2], QWER[i][j + 3]}};
 
-                    if(optionChunk1_1 == 0) {
-                        result = QWER[i][j + 4] * 16 + QWER[i][j + 5] * 8 + QWER[i][j  + 6] * 4 + QWER[i][j  + 7] * 2 + QWER[i][j  + 8] * 1;
-
-                        if(optionChunk1_2 == 0) {
-                            //00
-                        } else {
-                            //01
-                            result = result + 32;
-                        }
-                        domain.append(result);
-                    } else {
-                        result = QWER[i][j  + 4] * 16 + QWER[i][j + 5] * 8 + QWER[i][j  + 6] * 4 + QWER[i][j  + 7] * 2 + QWER[i][j + 8] * 1;
-                        char c = 0;
-                        if(result != 0) {
-                            if(optionChunk1_2 == 0) {
-                                //10
-                                c = (char)(result + 64);
-                            } else {
-                                //11
-                                c = (char)(result + 96);
-                            }
-                        } else {
-                            c = 0;
-                        }
-                        
-                        domain.append(c);
+                for(int k = 0; k < 2; k++) {
+                    int start = j + 4 + (k * 5);
+                    int val = 0;
+                    
+                    for(int b = 0; b < 5; b++) {
+                        val = val * 2 + QWER[i][start + b];
                     }
 
-                    if(optionChunk2_1 == 0) {
-                        result = QWER[i][j + 9] * 16 + QWER[i][j + 10] * 8 + QWER[i][j  + 11] * 4 + QWER[i][j  + 12] * 2 + QWER[i][j  + 13] * 1;
-
-                        if(optionChunk2_2 == 0) {
-                            //00
-                        } else {
-                            //01
-                            result = result + 32;
+                    if(opt[k][0] == 0) {
+                        if(opt[k][1] == 1) {
+                            val += 32;
                         }
-                        domain.append(result);
+                        domain.append(val);
                     } else {
-                        result = QWER[i][j + 9] * 16 + QWER[i][j + 10] * 8 + QWER[i][j  + 11] * 4 + QWER[i][j  + 12] * 2 + QWER[i][j  + 13] * 1;
-                        char c = 0;
-                        if(result != 0) {
-                            if(optionChunk2_2 == 0) {
-                                //10
-                                c = (char)(result + 64);
-                            } else {
-                                //11
-                                c = (char)(result + 96);
-                            }
-                        } else {
-                            c = 0;
+                        if(val == 0) {
+                            continue;
                         }
+                        char c = (char) (val + (opt[k][1] == 0 ? 64 : 96));
                         domain.append(c);
                     }
+                }
             }
             answer[i] = domain.toString();
         }
