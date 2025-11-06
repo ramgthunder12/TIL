@@ -14,6 +14,10 @@ import chap07.RecCalculator;
 //@Enable ... : "..." 관련 기능을 적용하는데 필요한 다양한 스프링 설정 대신 처리 
 public class AppCtx {
 	@Bean
+	public CacheAspect cacheAspect() {
+		return new CacheAspect();
+	}
+	@Bean
 	public ExeTimeAspect exeTimeAspect() {
 		return new ExeTimeAspect();
 	}
@@ -23,8 +27,4 @@ public class AppCtx {
 		return new RecCalculator();
 	}
 	
-	@Bean
-	public CacheAspect cacheAspect() {
-		return new CacheAspect();
-	}
 }
