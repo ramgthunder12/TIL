@@ -19,7 +19,7 @@ public class CacheAspect {
     }
 
 //    @Around("cacheTarget()")
-    @Around("execution(public * chap07..*(..))")
+    @Around("execution(public * chap07..*(..))")//pointcut 명시자 사용가능
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
         Long num = (Long) joinPoint.getArgs()[0];
         if(cache.containsKey(num)) {

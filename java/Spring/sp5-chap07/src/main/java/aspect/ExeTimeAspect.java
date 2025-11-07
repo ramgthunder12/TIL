@@ -30,7 +30,9 @@ public class ExeTimeAspect {
 	 * 프록시 생성 시점 : 빈 초기화 이후 BeanPostProcessor 후처리 단계에서 조건에 매칭되는 빈이 있으면 프록시로 교체됨.(그후 컨테이너에 등록)
 	 * */
 //	@Around("publicTarget()") //어떤 조건에서 공통기능을 실행할 것인가.(여기에서 어떤 조건은 Pointcut에 대한 조건)
-	@Around("cacheTarget()")
+//	@Around("aspect.CacheAspect.cacheTarget()")// 같은 패키지일때, 클래스 명으로 가능, 메소드 명으로 가능(유일할 때)
+//	@Around("cacheTarget()")
+	@Around("CommonPointcut.commonTarget()")
 	public Object measure(ProceedingJoinPoint joinPoint) throws Throwable {//ProceedingJoinPint를 프록시 대상 객체 메소드 호출할 때 사용됨
 		long start = System.nanoTime();
 		try {
