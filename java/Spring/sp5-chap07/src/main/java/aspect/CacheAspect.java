@@ -18,7 +18,8 @@ public class CacheAspect {
     public void cacheTarget() {    
     }
 
-    @Around("cacheTarget()")
+//    @Around("cacheTarget()")
+    @Around("execution(public * chap07..*(..))")
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
         Long num = (Long) joinPoint.getArgs()[0];
         if(cache.containsKey(num)) {
