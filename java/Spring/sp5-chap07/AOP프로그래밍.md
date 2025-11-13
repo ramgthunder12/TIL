@@ -13,7 +13,7 @@ Aspect Orientide Programming
 공통기능을 재사용할 수 있고
 핵심기능의 수정 없이 공통기능을 추가 할 수 있다.
 
-- 공통기능 삽입 방식
+### 공통기능 삽입 방식
 1. 컴파일 시점에서 바이트코드로 공통기능 삽입(Compile-time Weaving)
 2. 클래스로딩 시점에서 바이트코드로 공통기능 삽입(Load-time Weaving)
 3. 런타임 시점에서 프록시 객체를 생성해 공통 기능 삽입(Runtime Weaving)
@@ -25,32 +25,30 @@ Aspect Orientide Programming
 
 ## 프록시 란
 핵심 기능 실행할 때, 핵심 기능을 수정하지 않고 공통기능을 추가하고 제어 하기 위한 객체 이다.
-핵심 기능은 만들어져 있다.
+> 핵심 기능은 만들어져 있다.
 프록시는 공통 기능을 구현한다.
 
 # 스프링 AOP구현 방법
 ## 구현 방법
 ### pointcut 정의
-	어떤 집합(구역)에서 공통기능을 실행 시킬 것인가 정의
+어떤 집합(구역)에서 공통기능을 실행 시킬 것인가 정의
 ### advice 정의
-	메인 기능을 실행시킬때 공통기능은 언제 실행 시킬것인가 정의, 단 spring은 around만 가능
-	advice 종류
-	after : 메인 기능 전에 공통기능 호출
-	before : 메인 기능 후에 공통기능 호출
-	around : 메인 기능 전, 후에 둘다 공통기능 호출
-	after Throwing : 메인 기능에 예외 발생 시 공통기능 호출
-    After Returning : 대상 객체의 메서드가 익셉션 없이 실행된 이후 공통 기능 호출
+메인 기능을 실행시킬때 공통기능은 언제 실행 시킬것인가 정의, 단 spring은 around만 가능
+### advice 종류
+- After : 메인 기능 전에 공통기능 호출
+- Before : 메인 기능 후에 공통기능 호출
+- Around : 메인 기능 전, 후에 둘다 공통기능 호출
+- After Throwing : 메인 기능에 예외 발생 시 공통기능 호출
+- After Returning : 대상 객체의 메서드가 익셉션 없이 실행된 이후 공통 기능 호출
+
 ### joinpoint
-    Advice 적용 지점을 의미
-    메서드 호출, 필드 값 변경 등
-    Spring은 프록시를 이용해 AOP를 구현 하기 때문에 메서드 호출에 대한 joinpoint만 지원(프록시(InvocationHandler, MethodInterceptor)는 실제 객체의 메서드 호출을 가로 채서 공통기능을 수행함으로 메서드 호출에 대한 joinpoint만 지원)
+Advice 적용 지점을 의미  
+메서드 호출, 필드 값 변경 등
+Spring은 프록시를 이용해 AOP를 구현 하기 때문에 메서드 호출에 대한 joinpoint만 지원  
+> 프록시(InvocationHandler, MethodInterceptor)는 실제 객체의 메서드 호출을 가로 채서 공통기능을 수행함으로 메서드 호출에 대한 joinpoint만 지원
+
 # 프록시 생성 방식
 ## 프록시 생성 방식
-컴파일 시 생성 방식
-	바이트 코드 삽입 방식
-	라이브러리 추가 방식
-런타임 시  방식
 
 ## Spring에서 프록시 생성 방식
 ### AspectJ를 사용해 프록시 생성 방식
-### 
