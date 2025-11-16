@@ -47,8 +47,28 @@ Advice 적용 지점을 의미
 Spring은 프록시를 이용해 AOP를 구현 하기 때문에 메서드 호출에 대한 joinpoint만 지원  
 > 프록시(InvocationHandler, MethodInterceptor)는 실제 객체의 메서드 호출을 가로 채서 공통기능을 수행함으로 메서드 호출에 대한 joinpoint만 지원
 
-# 프록시 생성 방식
-## 프록시 생성 방식
+### [`execution 명시자 표현식`](./execution명시자표현식.txt)
 
-## Spring에서 프록시 생성 방식
-### AspectJ를 사용해 프록시 생성 방식
+### ProceedingJoinPoint 메서드
+Around Advice에서 ProceedingJoinPoint의 proceed()를 호출하면 공통기능을 실행 시킬 수 있다.
+- ProceedingJoinPoint 인터페이스가 제공하는 메서드
+	- Signature getSignature() : 
+	- Object getTarget() : 대상 객체를 반환함
+	- Object[] getArgs() : 파라미터 목록을 반환함
+- org.aspectj.lang.Signature 인터페이스가 제공하는 메서드
+	- String getName() : 호출되는 메소드의 이름을 반환함
+	- String toLongString() : 
+	- String toShortString() : 
+# 프록시 생성 방식
+### 프록시 생성 방식
+빈을 생성할 때 사용한 클래스를 바탕으로 프록시가 생성된다. 하지만 클래스가 인터페이스를 구현하고 있다면 빈을 생성할 때 사용한 클래스의 인터페이스를 바탕으로 프록시가 생성 된다. 따라서 인터페이스를 상속한 클래스로 빈을 만들때에는 
+설정 클래스(@Configuration)에 
+@EnableAspectJAutoProxy(proxyTargetClass = true)를 지정해 인터페이스가 아닌 클래스를 상속받아 프록시를 생성하도록 만들어야 한다.
+
+### Advice 적용 순서
+같은 JoinPoint 사용 시, Advice 실행 순서가 보장되지 않으므로 @Order을 사용하여 우선 순위를 지정 해야한다.
+- @Order(n)  
+n은 int값을 가짐, 수가 작을 수록 높은 우선 순위를 가짐
+
+### @Around의 Pointcut 설정
+### @Pointcut 재사용
