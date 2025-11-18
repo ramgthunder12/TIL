@@ -58,7 +58,8 @@ Around Advice에서 ProceedingJoinPoint의 proceed()를 호출하면 공통기�
 - org.aspectj.lang.Signature 인터페이스가 제공하는 메서드
 	- String getName() : 호출되는 메소드의 이름을 반환함
 	- String toLongString() : 
-	- String toShortString() : 
+	- String toShortString() :
+
 # 프록시 생성 방식
 ### 프록시 생성 방식
 빈을 생성할 때 사용한 클래스를 바탕으로 프록시가 생성된다. 하지만 클래스가 인터페이스를 구현하고 있다면 빈을 생성할 때 사용한 클래스의 인터페이스를 바탕으로 프록시가 생성 된다. 따라서 인터페이스를 상속한 클래스로 빈을 만들때에는 
@@ -71,4 +72,8 @@ Around Advice에서 ProceedingJoinPoint의 proceed()를 호출하면 공통기�
 n은 int값을 가짐, 수가 작을 수록 높은 우선 순위를 가짐
 
 ### @Around의 Pointcut 설정
+
+
 ### @Pointcut 재사용
+별도의 클래스에 @Ponintcut만 분리 해서 재사용 할수 있다.
+분리한 Pointcut이 담긴 클래스는 Bean으로 등록할 필요가 없다.
