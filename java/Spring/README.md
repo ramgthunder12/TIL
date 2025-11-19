@@ -17,7 +17,7 @@
 | 04장 | 의존 자동 주입 (Auto-wiring) 예제 | [`sp5-chap04`](./sp5-chap04) |
 | 05장 | 컴포넌트 스캔(Component Scan) 예제 | [`sp5-chap05`](./sp5-chap05) |
 | 06장 | 빈 객체의 라이프사이클 예제 | [`sp5-chap06`](./sp5-chap06) |
-| 07장 | 스프링 AOP (관점 지향 프로그래밍) 예제 | [`sp5-chap07`](./sp5-chap07) |
+| 07장 | [`스프링 AOP`](./sp5-chap07/AOP프로그래밍.md) (관점 지향 프로그래밍) 예제 | [`sp5-chap07`](./sp5-chap07) |
 | 08장 | Tomcat JDBC, 트렌잭션 처리 예제 | [`sp5-chap08`](./sp5-chap08) |
 ---
 
@@ -37,4 +37,4 @@
 - [ ] Maven → Gradle로 빌드 도구 변경 실험  
 - [ ] `JUnit`을 사용한 단위 테스트 실습 추가  
 - [ ] `JavaEE` 기반 실습을 `Jakarta EE`로 마이그레이션해 보기  
-- [ ] AspectJ 표현식 정리하기
+- [x] AspectJ 표현식 정리하기
