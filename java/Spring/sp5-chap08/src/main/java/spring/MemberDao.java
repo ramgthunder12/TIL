@@ -1,14 +1,60 @@
 package spring;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import dbquery.MemberRowMapper;
 
 public class MemberDao {
-	public Member selectByEmail(String email) {
-		return null;
+	private JdbcTemplate jdbcTemplate;
+	
+	public MemberDao(DataSource dataSource) {
+		this.jdbcTemplate = new JdbcTemplate(dataSource);
 	}
+	
+	public Member selectByEmail(String email) {
+//		익명클래스방식으로 구현
+//		List<Member> results = jdbcTemplate.query("select * from MEMBER where EMAIL = ?", 
+//				new RowMapper<Member>() {
+//					@Override
+//					public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
+//						Member member = new Member(
+//								rs.getString("EMAIL"),
+//								rs.getString("PASSWORD"),
+//								rs.getString("NAME"),
+//								rs.getTimestamp("REGDATE").toLocalDateTime());
+//						
+//						member.setId(rs.getLong("ID"));
+//						return member;
+//					}
+//		}, email);
+//		return results.isEmpty() ? null : results.get(0);
 		
+//		람다식 방식으로 구현
+//		List<Member> results = jdbcTemplate.query(
+//				"select * from MEMBER where EMAIL = ?",
+//				(ResultSet rs, int rowNum) -> {
+//					Member member = new Member(
+//							rs.getString("EMAIL"),
+//							rs.getString("PASSWORD"),
+//							rs.getString("NAME"),
+//							rs.getTimestamp("REFDATE").toLocalDateTime());
+//					member.setId(rs.getLong("ID"));
+//					return member;
+//				},
+//				email);
+//		return results.isEmpty() ? null : results.get(0);
+		
+//		RowMappper인터페이스를 클래스로 구현
+		List<Member> results = jdbcTemplate.query("select * from MEMBER where EMAIL = ?",
+				new MemberRowMapper(), email);
+		return results.isEmpty() ? null : results.get(0);
+	}
+	
 	public void insert(Member member) {
 		
 	}
@@ -21,3 +67,5 @@ public class MemberDao {
 		return null;
 	}
 }
+
+
