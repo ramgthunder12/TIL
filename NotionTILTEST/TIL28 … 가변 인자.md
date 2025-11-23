@@ -14,16 +14,14 @@ void print(Object... args) {
 
 }
 ```
+- 가변인자는 가장 마지막 파라미터에 사용해야한다.
+
 > If the last formal parameter is a variable arity parameter, the method is a *variable arity method*. Otherwise, it is a *fixed arity method*.
 
 https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html?utm_source=chatgpt.com
 > “Invocations of a variable arity method … All the actual argument expressions that do not correspond to the formal parameters preceding the variable arity parameter will be … stored into an array that will be passed to the method invocation (§15.12.4.2).” https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html?utm_source=chatgpt.com
 - 가변 인자로 선언된 파라미터의 **정식 타입은 배열 타입(Array Type)** 이다.
 - 메서드 호출 시 /**가변 인자 위치**에 전달된 실제 인자들은 **배열로 만들어져서(new T[]{…})** 그 메서드 호출에 전달된다.
-
-
-가변인자를 쓰면서 타입에 배열을 사용하면 안됨 ex) int[]… i
-
 > It is a compile-time error to use mixed array notation for a variable arity parameter.(https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html?utm_source=chatgpt.com)
 <details>
 <summary>arity</summary>
@@ -35,6 +33,39 @@ https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html?utm_source=chatgpt.
     = parameter count
 
 </details>
+
+JLS에서 가변 인자 파라미터 선언 시 가변인자 표기와 혼합 배열 표기법 사용을 허용하지 않는다.
+
+<details>
+<summary>JLS</summary>
+
+    Java Language Specification
+
+    자바 언어의 공식 규격서(언어 사양서)
+
+    자바 문법, 타입 규칙, 컴파일 규칙, 바이트코드 의미 등 자바가 어떻게 동작 해야 하는지를 정의한 문서
+
+</details>
+
+<details>
+<summary>mixed array notiation 혼합 배열 표기법</summary>
+
+    타입 옆의 배열 표기와 변수명 뒤의 배열 표기를 섞는 것
+
+    권장 하지 않지만 
+변수 명 뒤의 배열도 표기 가능
+
+    타입 뒤의 [] + 변수명 뒤의 [] = 최종 배열 차원
+
+    하지만 가변 인자에서는 불가능
+
+</details>
+
+ex) int[]… i  가능
+
+int[]… i[] 불가능
+
+int…i[] 불가능
 
 # Insight : 
 
