@@ -1,1 +1,15 @@
 Tomcat JDBC DataSource 클래스 주요 프로퍼티
+
+setInitialSize(int)
+setMaxActive(int)
+setMaxIdle(int)
+setMinIdle(int)
+setMaxWait(int)
+setMaAge(int)
+setValidationQuery(String)
+setValidationQueryTimeout(int)
+setTestOnBorrow(boolean)
+setTestOnReturn(boolean)
+setTestWhileIdle(boolean)
+setMinEvictableIdleTimeMillis(int)
+setTimeBetweenEvictionRunsMillis(int)
