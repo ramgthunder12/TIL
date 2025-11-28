@@ -56,6 +56,10 @@ public class MemberDao {
 		List<Member> results = jdbcTemplate.query("select * from MEMBER where EMAIL = ?",
 				new MemberRowMapper(), email);
 		return results.isEmpty() ? null : results.get(0);
+		
+		//queryForObject를 사용해 email을 사용하는 0 또는 1건을 리턴 
+//		Member member = jdbcTemplate.queryForObject("select * from Member where EMAIL = ?", new MemberRowMapper(), email);
+//		return member;
 	}
 	
 	public void insert(Member member) {
@@ -95,6 +99,19 @@ public class MemberDao {
 		List<Member> results = jdbcTemplate.query("select * from MEMBER", new MemberRowMapper());
 		
 		return results;
+	}
+	
+	public int count() {
+//		List<Integer> results = jdbcTemplate.query("select count(*) from MEMBER", new RowMapper<Integer>() {
+//			@Override
+//			public Integer mapRow(ResultSet rs, int rowNum) throws SQLException {
+//				return rs.getInt(1);
+//			}
+//		});
+//		return results.get(0);
+		Integer count = jdbcTemplate.queryForObject("select count(*) from Member", Integer.class);
+		
+		return count;
 	}
 }
 
