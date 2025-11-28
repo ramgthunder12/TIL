@@ -67,18 +67,32 @@ public class MemberDao {
 	}
 	
 	public List<Member> selectAll() {
-		List<Member> results = jdbcTemplate.query("select * from MEMBER", new RowMapper<Member>() {
-			@Override
-			public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
-				Member member = new Member(
-						rs.getString("EMAIL"),
-						rs.getString("PASSWORD"),
-						rs.getString("NAME"),
-						rs.getTimestamp("REGDATE").toLocalDateTime());
-				member.setId(rs.getLong("ID"));
-				return member;
-			}
-		});
+//		//익명 클래스 방식으로 구현
+//		List<Member> results = jdbcTemplate.query("select * from MEMBER", new RowMapper<Member>() {
+//			@Override
+//			public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
+//				Member member = new Member(
+//						rs.getString("EMAIL"),
+//						rs.getString("PASSWORD"),
+//						rs.getString("NAME"),
+//						rs.getTimestamp("REGDATE").toLocalDateTime());
+//				member.setId(rs.getLong("ID"));
+//				return member;
+//			}
+//		});
+		
+		//람다식으로 구현
+//		List<Member> results = jdbcTemplate.query("selet * from MEMBER", (ResultSet rs, int rowNum) -> {
+//		Member member = new Member(
+//				rs.getString("EMAIL"),
+//				rs.getString("PASSWORD"),
+//				rs.getString("NAME"),
+//				rs.getTimestamp("REGDATE").toLocalDateTime());
+//		member.setId(rs.getLong("ID"));
+//		return member;});
+		
+		//RowMapper 구현 방식
+		List<Member> results = jdbcTemplate.query("select * from MEMBER", new MemberRowMapper());
 		
 		return results;
 	}
