@@ -1,14 +1,15 @@
 package spring;
 
-import java.sql.ResultSet;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Collection;
+import java.sql.Timestamp;
 import java.util.List;
 
 import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 
 import dbquery.MemberRowMapper;
 
@@ -67,7 +68,20 @@ public class MemberDao {
 	}
 	
 	public void update(Member member) {
-		jdbcTemplate.update("update MEMBER set NAME = ?, PASSWORD = ? where EMAIL = ?", member.getName(), member.getPassword(), member.getEmail());
+//		jdbcTemplate.update("update MEMBER set NAME = ?, PASSWORD = ? where EMAIL = ?", member.getName(), member.getPassword(), member.getEmail());
+		jdbcTemplate.update(new PreparedStatementCreator() {
+			@Override
+			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+				PreparedStatement pstmt = con.prepareStatement(
+						"insert into MEMBER(EMAIL, PASSWORD, NAME, REGDATE) values (?, ? , ?, ?)");
+				pstmt.setString(1, member.getEmail());
+				pstmt.setString(2, member.getPassword());
+				pstmt.setString(3, member.getName());
+				pstmt.setTimestamp(4, Timestamp.valueOf(member.getRegisterDateTime()));
+				
+				return pstmt;
+			}
+		});
 	}
 	
 	public List<Member> selectAll() {
