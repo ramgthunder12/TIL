@@ -10,6 +10,8 @@ import javax.sql.DataSource;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 
 import dbquery.MemberRowMapper;
 
@@ -64,7 +66,32 @@ public class MemberDao {
 	}
 	
 	public void insert(Member member) {
+		KeyHolder keyHolder = new GeneratedKeyHolder();
+//		익명클래스 구현 방식
+//		jdbcTemplate.update(new PreparedStatementCreator() {
+//			@Override
+//			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+//				PreparedStatement pstmt = con.prepareStatement("insert into MEMBER (EMAIL, PASSWORD, NAME, REGDATE)" + "values (?, ?, ?, ?)", new String[] {"ID"});
+//				pstmt.setString(1, member.getEmail());
+//				pstmt.setString(2, member.getPassword());
+//				pstmt.setString(3, member.getName());
+//				pstmt.setTimestamp(4, Timestamp.valueOf(member.getRegisterDateTime()));
+//				return pstmt;
+//			}
+//		}, keyHolder);
 		
+//		람다식 구현 방식
+		jdbcTemplate.update((Connection con) -> {
+			PreparedStatement pstmt = con.prepareStatement("insert into MEMBER(EMAIL, PASSWORD, NAME, REGDATE) " + "values(?, ?, ?, ?)", new String[] {"ID"});
+			pstmt.setString(1, member.getEmail());
+			pstmt.setString(2, member.getPassword());
+			pstmt.setString(3, member.getName());
+			pstmt.setTimestamp(4, Timestamp.valueOf(member.getRegisterDateTime()));
+			
+			return pstmt;
+		}, keyHolder);
+		Number keyValue = keyHolder.getKey();
+		member.setId(keyValue.longValue());
 	}
 	
 	public void update(Member member) {
