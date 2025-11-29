@@ -12,7 +12,7 @@ public class AppCtx {
 	public DataSource dataSource() {
 		DataSource ds = new DataSource();
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
-		ds.setUrl("jdbc:mysql://localhost/spring5fs?characterEncoding=utf8");
+		ds.setUrl("jdbc:mysql://localhost:3306/spring5fs?characterEncoding=utf8&useSSL=false&sslMode=DISABLED");
 		ds.setUsername("spring5");
 		ds.setPassword("spring5");
 		

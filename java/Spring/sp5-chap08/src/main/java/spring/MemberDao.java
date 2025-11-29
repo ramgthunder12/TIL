@@ -100,11 +100,10 @@ public class MemberDao {
 			@Override
 			public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
 				PreparedStatement pstmt = con.prepareStatement(
-						"insert into MEMBER(EMAIL, PASSWORD, NAME, REGDATE) values (?, ? , ?, ?)");
+						"UPDATE MEMBER SET NAME = ?, PASSWORD = ? WHERE EMAIL = ?");
 				pstmt.setString(1, member.getEmail());
 				pstmt.setString(2, member.getPassword());
 				pstmt.setString(3, member.getName());
-				pstmt.setTimestamp(4, Timestamp.valueOf(member.getRegisterDateTime()));
 				
 				return pstmt;
 			}
