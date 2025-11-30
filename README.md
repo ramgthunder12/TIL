@@ -41,6 +41,7 @@ Github Actions 워크플로우
   - [`servlet_and_jsp`](./java/servlet_and_jsp) : 처음 해보는 Servlet & JSP 웹 프로그래밍 도서를 바탕으로 실습 및 정리
   - [`Spring`](./java/Spring) : 초보 웹 개발자를 위한 스프링5 프로그래밍 입문 도서를 바탕으로 실습 및 정리  
   - [`algorithms`](./java/algorithms/) : 알고리즘 문제 풀이 및 코딩테스트 알고리즘 연습
+  - [`syntax`](./java/syntax) : 추가적으로 학습한 Java 문법 정리
 
 ---
 
