@@ -17,7 +17,7 @@
 | 04장 | 의존 자동 주입 (Auto-wiring) 예제 | [`sp5-chap04`](./sp5-chap04) | |
 | 05장 | 컴포넌트 스캔(Component Scan) 예제 | [`sp5-chap05`](./sp5-chap05) | |
 | 06장 | 빈 객체의 라이프사이클 예제 | [`sp5-chap06`](./sp5-chap06) | |
-| 07장 | [`스프링 AOP`](./sp5-chap07/AOP프로그래밍.md) (관점 지향 프로그래밍) 예제 | [`sp5-chap07`](./sp5-chap07) | |
+| 07장 | [`스프링 AOP`](./sp5-chap07/AOP프로그래밍.md) (관점 지향 프로그래밍) 예제 | [`sp5-chap07`](./sp5-chap07) | [`7장 AOP정리`](https://github.com/ramgthunder12/TIL/blob/main/java/Spring/sp5-chap07/AOP%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.md)[`execution명시자 표현`](https://github.com/ramgthunder12/TIL/blob/main/java/Spring/sp5-chap07/execution%EB%AA%85%EC%8B%9C%EC%9E%90%ED%91%9C%ED%98%84%EC%8B%9D.txt) |
 | 08장 | Tomcat JDBC, 트렌잭션 처리 예제 | [`sp5-chap08`](./sp5-chap08) | [`8장 DB연동 정리`](https://github.com/easythunder/backend-study-share/blob/study-ramgthunder/Server/spring/DB%EC%97%B0%EB%8F%99.md) |
 ---
 
