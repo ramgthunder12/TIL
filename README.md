@@ -43,6 +43,9 @@ Github Actions 워크플로우
   - [`algorithms`](./java/algorithms/) : 알고리즘 문제 풀이 및 코딩테스트 알고리즘 연습
   - [`syntax`](./java/syntax) : 추가적으로 학습한 Java 문법 정리
 
+### 🌐 [`network/`](./network)  
+
+네트워크 기초 개념과 통신 구조를 정리한 디렉토리  
 
 ---
 
