@@ -34,3 +34,8 @@ Dependency Injection, 의존 주입이라고 번역한다.
 객체를 생성해 주고 주입해주는 역할을 하는 클래스
 
 ## 스프링은 DI를 지원하는 조립기
+
+## @Configuration
+## @Autowired
+## @Import
+
